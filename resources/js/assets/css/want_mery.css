@@ -1,0 +1,602 @@
+ #want-mery input:focus {
+    box-shadow: 0 0 0 0.2rem #FFC8D4;
+    border: #FFC8D4;
+     outline: none;
+}
+
+#want-mery .breadcrumb-item {
+    margin-left: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+#want-mery .paginate-header {
+    padding: 0 .5rem;
+}
+
+#want-mery .row-wrapper--1 {
+    width: 85%;
+}
+
+#want-mery .serv-row {
+    padding-bottom: 4.25rem;
+    margin-top: 3.875rem;
+}
+
+#want-mery .option-wrapper {
+    width: 100%;
+    height: 8.56rem;
+    border: 1px solid #DBDBDB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.62rem;
+    margin-bottom: 2rem;
+
+}
+
+#want-mery .option-wrapper:hover {
+    background-color: #F8F8F8;
+}
+
+#want-mery .option-wrapper p {
+    margin-top: .7rem;
+    margin-bottom: 0;
+}
+
+
+#want-mery .step-header {
+    font-size: 2.0625rem;
+    padding-top: 1.5rem;
+    color: #202020;
+    line-height: 1.2;
+}
+
+#want-mery .step-desc {
+    font-size: 1.125rem;
+    width: 40%;
+    margin: 1rem auto 3rem;
+}
+
+#want-mery #steps .carousel-next {
+    width: 100%;
+    top: unset;
+    bottom: 0;
+    opacity: 1;
+    margin-bottom: 3.125rem;
+    position: relative;
+}
+
+#want-mery #steps .carousel-control-prev {
+    bottom: unset;
+    opacity: 1;
+    top: 2rem;
+    position: unset;
+}
+
+#want-mery #steps .breadcrumb-item {
+    margin-left: 2.5rem;
+}
+
+#want-mery #steps .btn-danger--custom {
+    width: 15%;
+    border-radius: 1.45rem;
+    font-size: 1.25rem;
+}
+
+#want-mery #steps .step-header--1 {
+    font-size: 1.375rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 2.75rem;
+}
+
+#want-mery #steps .form-wrapper {
+    width: 80%;
+    margin: 0 auto 2rem;
+
+}
+
+#want-mery #steps .form-row {
+    width: 90%;
+    margin: auto;
+}
+
+#want-mery #steps .form-wrapper label {
+    margin-bottom: 1.4375rem;
+    font-size: 1.125rem;
+}
+
+#want-mery #steps .form-wrapper label.zipCode {
+    margin-top: .23rem;
+}
+
+#want-mery #steps .form-inline {
+    justify-content: center;
+}
+
+#want-mery #steps #inputSize {
+    width: 55%;
+    border-color: #DBDBDB;
+    border-radius: 1.5625rem;
+    height: 3.125rem;
+}
+
+#want-mery #steps .unit {
+    font-size: 1rem;
+    margin-left: .5rem;
+}
+
+#want-mery #steps #inputSize::placeholder, #want-mery #steps .zip-inp::placeholder {
+    font-size: .75rem;
+    text-align: center;
+}
+
+#want-mery #steps .zip-inp::placeholder {
+    font-size: .875rem;
+}
+
+#want-mery #steps .fa-plus, #want-mery #steps .fa-minus {
+    color: #1CB6C5;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+#want-mery #steps .field {
+    border: none;
+    text-align: center;
+    width: 45%;
+    margin: 0 .5rem;
+    background-color: transparent;
+    border-radius: 1.5625rem;
+    font-size: 1.5625rem;
+}
+
+#want-mery #steps .counter:focus {
+    box-shadow: 0 0 0 0.2rem #98dce3;
+
+}
+
+#want-mery #steps .apply-task {
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+#want-mery #task-wrapper input[type=checkbox] {
+    display: none;
+}
+
+#want-mery #steps .mery-home {
+    text-align: center;
+}
+
+#want-mery .form-wrapper#task-wrapper label {
+    font-size: 1rem;
+    border: 1px solid #DBDBDB;
+    background-color: #FFFFFF;
+    border-radius: 1.5625rem;
+    padding: .5rem .5rem;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: .8rem;
+}
+
+#want-mery .form-wrapper#task-wrapper .form-check {
+    padding-right: 0;
+    padding-left: .5rem;
+}
+
+#want-mery .form-wrapper#task-wrapper .form-check-2 {
+    padding-left: .2rem;
+}
+
+
+#want-mery .form-wrapper#task-wrapper input[type=checkbox]:checked + .task-label {
+    border-color: #EB3F66;
+    color: #EB3F66;
+}
+
+#want-mery #steps .form-group-2 {
+    width: 100%;
+    margin-left: 2rem;
+}
+
+#want-mery #steps .zip-inp {
+    width: 21%;
+    margin: 1.25rem auto 3.375rem auto;
+    border-radius: 1.5625rem;
+    height: 3rem;
+    border: 1px solid #DBDBDB;
+}
+
+
+#want-mery #steps .mery-num {
+    color: #EB3F66;
+}
+
+#want-mery #steps .join-form {
+    width: 70%;
+}
+
+#want-mery #steps .join-form .form-control {
+    height: 2.875rem;
+    margin-bottom: .375rem;
+    border-radius: 7px;
+}
+
+#want-mery #steps .join-form .join-link {
+    text-decoration: underline;
+    color: #1CB6C5;
+}
+
+#want-mery #steps .join-agree {
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+#want-mery #steps .join-btn {
+    margin: 2rem auto 1.25rem;
+}
+
+#want-mery #steps .join-btn .btn-danger--custom {
+    width: 25%;
+    border-radius: 25px;
+}
+
+
+
+
+/* step tracker */
+
+#steps .step-tracker {
+    display: none;
+}
+.progress-bar-wrapper {
+    box-sizing: border-box;
+    width: 75%;
+    margin: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    align-items: center;
+
+}
+
+.progress-bar-wrapper .step {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    background-color: #EEEEEE;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 5px solid #FCFCFC;
+    position: relative;
+}
+
+.progress-bar-wrapper .done {
+    background-color: #EB3F66;
+}
+
+.progress-bar-wrapper .bar {
+    background-color: #F5F5F5;
+    -moz-flex-grow: 1;
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+    height: 4px;
+}
+
+#task-wrapper .tack-check-wrapper {
+    display: none;
+}
+
+
+#steps .txt-center {
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+    #want-mery #steps .form-wrapper-edit {
+        width: 95%;
+    }
+}
+@media (max-width: 991.98px) {
+
+    #want-mery {
+        background-color: #FFFFFF;
+    }
+
+    /*need mery */
+    #need-mery .need-mery-header {
+        text-align: center;
+    }
+
+    #need-mery .main-heading {
+        margin-left: 0 !important;
+    }
+
+    #need-mery .line {
+        margin-left: auto !important;
+    }
+
+
+    #steps .step-tracker {
+        display: block;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    /*step 1*/
+    #want-mery .step-heading {
+        margin-top: 1.5rem;
+    }
+
+    #want-mery .step-desc {
+        width: 60%;
+    }
+
+    #want-mery .step-header {
+        font-size: 2rem;
+    }
+
+    /*step 2 */
+    #want-mery #steps .mery-home {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    #task-wrapper .hide-form {
+        display: none;
+    }
+    #task-wrapper .tack-check-wrapper {
+        display: block;
+    }
+
+    #want-mery .form-wrapper#task-wrapper .tack-check-wrapper .checkmark {
+        right: 0;
+        left: unset;
+        width: 1.07rem;
+        border-radius: 3px;
+        background-color: #fff;
+        border: 2px solid #E2E2E2;
+    }
+
+    #want-mery .form-wrapper#task-wrapper .tack-check-wrapper .checkbox-wrapper {
+        padding-left: 0;
+    }
+
+    #want-mery .form-wrapper#task-wrapper .tack-check-wrapper .task-label {
+        font-size: 1rem;
+    }
+    #want-mery #steps .step-header--1 {
+        display: inline;
+        padding-left: .5rem;
+        font-size: 1.125rem;
+        margin-top: 0;
+        margin-bottom: 0;
+        align-self: center;
+        text-align: left;
+    }
+
+    #want-mery #steps .form-wrapper label {
+        font-size: 1rem;
+    }
+
+    #want-mery #steps .unit {
+        font-size: .75rem;
+    }
+
+    #want-mery #steps .mery-home img {
+        width: 3.437rem !important;
+        height: 3.437rem !important;
+    }
+
+    #want-mery #steps .form-wrapper {
+        width: 100%;
+    }
+
+    #want-mery #steps .img-hide {
+        display: inline !important;
+    }
+
+
+    /*step 3 */
+    #want-mery #steps .form-group-2 {
+        margin-left: 0;
+    }
+
+    #want-mery .form-wrapper#task-wrapper {
+        width: 90%;
+    }
+
+    #want-mery .form-wrapper#task-wrapper label {
+        border: unset;
+        text-align: left;
+        padding: 0;
+
+    }
+
+    #want-mery .form-wrapper#task-wrapper .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #want-mery .form-wrapper#task-wrapper .form-check {
+        padding-left: 0;
+    }
+
+    /*step 4 */
+    #want-mery #steps .zip-inp {
+        width: 30%;
+    }
+
+    #want-mery #steps .join-form .form-control {
+        width: 70%;
+        margin: .375rem auto;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+     #top-nav, #up #slider, main .best-mery, #want-mery .breadcrumb, #steps .back, #want-mery #steps .unit {
+        display: none;
+    }
+
+
+
+    #want-mery .row-wrapper--1 {
+        width: 90%;
+    }
+
+    #want-mery .option-wrapper {
+        margin-bottom: 1.4375rem;
+    }
+
+    #need-mery, #want-mery .step-heading {
+        padding-top: 10.5rem;
+    }
+
+
+    #need-mery .need-mery-header .main-heading {
+        font-size: 1.25rem;
+    }
+
+    /*step 1 */
+    #want-mery .step-header {
+        font-size: 1.7rem;
+    }
+
+    #want-mery .step-desc {
+        width: 80%;
+        font-size: 1rem;
+    }
+
+    #want-mery #steps .btn-danger--custom {
+        width: 40%;
+    }
+
+
+
+    /*step 2 */
+    #want-mery #steps .form-row {
+        width: 100%;
+    }
+
+    #steps .txt-center {
+        display: flex;
+        text-align: unset;
+        margin-bottom: 2rem;
+    }
+
+    #want-mery #steps .form-wrapper label {
+        margin-bottom: 0;
+        width: 100%;
+        align-self: center;
+    }
+
+    #want-mery #steps .form-inline {
+        justify-content: flex-end;
+    }
+
+    #want-mery #steps #inputSize {
+        width: 100%;
+    }
+
+    #want-mery #steps .field {
+        font-size: 1.25rem;
+    }
+
+    #want-mery #steps .fa-plus, #want-mery #steps .fa-minus {
+        font-size: 1.3rem;
+    }
+
+    #want-mery #steps .form-wrapper {
+        margin-bottom: 4rem;
+    }
+
+
+    #want-mery #steps .mery-home img {
+        margin-left: 1.68rem;
+    }
+
+
+    /*step 4*/
+    #want-mery #steps .form-wrapper label.zipCode {
+        margin-bottom: 1.4375rem;
+        font-size: 1.125rem;
+        width: 70%;
+    }
+
+
+
+    #want-mery #steps .join-btn .btn-danger--custom {
+        width: 50%;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+
+    #want-mery .option-wrapper {
+        height: 2.875rem;
+    }
+
+    #want-mery .option-wrapper img, #need-mery .line {
+        display: none;
+    }
+
+    #want-mery .option-wrapper p {
+        margin-top: 0;
+    }
+
+
+    /*step 1 */
+    #want-mery #steps .form-wrapper.form-step-1 {
+        margin-top: 5rem;
+    }
+    #want-mery .step-header {
+        font-size: 1.25rem;
+    }
+
+    #want-mery .step-desc {
+        width: 90%;
+        font-size: .875rem;
+        margin-top: 2.25rem;
+        margin-bottom: 10rem;
+    }
+
+    #want-mery #steps .btn-danger--custom {
+        width: 50%;
+    }
+
+
+
+    /*step 4 */
+
+    #want-mery #steps .join-form .form-control {
+        width: 90%;
+    }
+
+    #want-mery #steps .zip-inp {
+        width: 55%;
+        margin-bottom: 13.75rem;
+    }
+
+    #want-mery #steps .form-wrapper label.freeAccount {
+        width: 80%;
+        margin-bottom: 1.312rem;
+
+    }
+    #want-mery #steps .form-group label.zipCode {
+        margin-top: 6rem;
+    }
+}

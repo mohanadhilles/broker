@@ -1,0 +1,3319 @@
+/*#F5F5F5*/
+/*#1F2026*/
+/*#EB3F66*/
+/*#FFFFFF*/
+/*#1CB6C5*/
+@import url('https://fonts.googleapis.com/css?family=Muli:300,600&display=swap');
+
+@font-face {
+    font-family: 'DuCoHeadlineSmall';
+    src: url('../font/DuCoHeadline200.ttf');
+}
+
+@font-face {
+    font-family: 'DuCoHeadlineMedium';
+    src: url('../font/DuCoHeadline400.ttf');
+}
+
+@font-face {
+    font-family: 'DuCoHeadlineLarge';
+    src: url('../font/DuCoHeadline600.ttf');
+}
+
+
+body {
+    font-family: 'DuCoHeadlineMedium', sans-serif;
+}
+
+
+/*---------------- navbar Style ----------------*/
+
+
+#top-nav.pos {
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 0;
+    z-index: 11;
+}
+/*messages */
+
+
+/*---------- Direct Message Style ------------*/
+@keyframes slideFromLeft {
+    0% {
+        margin-left: -200px;
+        opacity: 0;
+    }
+    100% {
+        margin-left:2.3rem;
+        opacity: 1;
+    }
+}
+
+@keyframes slideFromLeftMobile {
+    0% {
+        margin-left: -200px;
+        opacity: 0;
+    }
+    100% {
+        margin-left:0rem;
+        opacity: 1;
+    }
+}
+
+
+@keyframes slideFromRight {
+    0% {
+        margin-right: -200px;
+        opacity: 0;
+    }
+    100% {
+        margin-right: 2.75rem;
+        opacity: 1;
+    }
+}
+
+@keyframes slideFromRightMobile {
+    0% {
+        margin-right: -200px;
+        opacity: 0;
+    }
+    100% {
+        margin-right: 0rem;
+        opacity: 1;
+    }
+}
+
+
+
+div#search {
+    background: #F3F3F3;
+    padding: .5rem;
+    display: flex;
+    justify-content: center;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+    margin-bottom: .625rem;
+
+}
+
+#searchFriend {
+    width: 95%;
+    height: 2.3125rem;
+    border-radius: 7px;
+    border: none;
+    padding-left: .5rem;
+}
+
+#searchFriend:focus, #chatview #sendMessage input:focus {
+    outline-color: #E75A7A;
+}
+
+#searchFriend::placeholder {
+    padding-left: 2.3rem;
+    color: #1F2026;
+    font-size: .75rem;
+}
+
+/*Friend List Style*/
+div.paddingRight {
+    padding-right: 0;
+}
+
+div#friends {
+    background-color: #F3F3F3;
+    display: flex;
+    justify-content: center;
+}
+
+#friends .people {
+    list-style: none;
+    margin-top: 1.3125rem;
+    width: 90%;
+    padding: 0;
+    height: 100%;
+}
+
+#friends .people .person {
+    display: flex;
+    border: 1px solid #DBDBDB;
+    padding: .875rem 1rem;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: .5rem;
+    position: relative;
+    transition: all .2s;
+}
+
+#friends .people .person:last-of-type {
+    margin-bottom: 4rem;
+}
+
+#friends .people .person.active-chat, #friends .people .person:hover {
+    background-color: #1F2026;
+    padding-left: 7%;
+    cursor: pointer;
+}
+
+#friends .people .person.active-chat span, #friends .people .person:hover span {
+    color: #FFFFFF;
+}
+
+#profile .chat-header, #friends .person .info {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#friends .person .info {
+    padding-left: .3rem;
+    color: #202020;
+    font-size: 1rem;
+}
+
+#friends .person .friend-time {
+    position: absolute;
+    right: .6rem;
+    top: 20%;
+}
+
+#profile .chat-header .active-status, #friends .person .friend-time {
+    color: #C2C2C2;
+    font-size: .75rem;
+}
+
+
+/*Chat Section Style*/
+.message-container {
+    position: relative;
+}
+
+.chat-header .custom-link {
+    color: #1F2026;
+}
+
+.chat-header .custom-link:hover, .chat-header .custom-link:focus {
+    color: #E75A7A !important;
+    text-decoration: none;
+}
+
+div.paddingHor {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+#profile {
+    background: #FFFFFF;
+    padding: .357rem;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+    margin-bottom: .625rem;
+    display: flex;
+}
+
+#profile .chat-avatar {
+    padding-left: 2.625rem;
+}
+
+#profile .chat-header {
+    padding-left: .375rem;
+}
+
+
+#chatview #chat-messages .msg-time {
+    font-size: .75rem;
+    color: #C2C2C2;
+    margin-top: 1.3125rem;
+    margin-bottom: 2.356rem;
+}
+
+
+/*General message Style*/
+
+#chat-messages .message {
+    padding: 0 .5rem;
+    display: flex;
+    margin-bottom: .5rem;
+}
+
+#chat-messages .message .bubble {
+    background-color: #F5F5F5;
+    border-radius: 1rem;
+    padding: .5rem 1rem;
+    width: 15.8125rem;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 1.25rem;
+}
+
+#chat-messages .message:last-of-type {
+    margin-bottom: 3.78125rem;
+}
+
+
+/*messages sent style*/
+
+#chat-messages .message:not(.reserved) {
+    flex-direction: row-reverse;
+    margin-right: 2.75rem;
+    animation: slideFromRight 1s;
+    -webkit-animation: slideFromRight 1s;
+}
+
+#chat-messages .message:not(.reserved) .bubble {
+    margin-right: 1.4375rem;
+    border-top-right-radius: 0;
+}
+
+
+/*Reseved messages Style*/
+
+#chat-messages .message.reserved {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    position: relative;
+    margin-left: 2.3rem;
+    -webkit-animation: slideFromLeft .8s;
+    animation: slideFromLeft .8s;
+
+}
+
+
+#chat-messages .message.reserved .bubble {
+    border-radius: 1.5rem;
+
+}
+
+
+#chat-messages .message.reserved .message-status {
+    width: .875rem;
+    height: .875rem;
+    border-radius: 50%;
+    background-color: #F5F5F5;
+    position: absolute;
+    bottom: -.3rem;
+    left: -.2rem;
+
+}
+
+
+
+#chatview #sendMessage {
+    position: absolute;
+    bottom: 0;
+    background: #F5F5F5;
+    width: 100%;
+    padding: 2.187rem 2rem;
+}
+
+#chatview #sendMessage input {
+    width: 90%;
+    height: 3.3125rem;
+    border: 1px solid #E4E4E4;
+    margin-right: .5rem;
+    padding-left: .5rem;
+    font-family: "Segoe UI", sans-serif;
+}
+
+#chatview #sendMessage input::placeholder {
+    font-size: .9375rem;
+    color: #C2C2C2;
+    padding-left: 1rem;
+    font-family: "DuCoHeadlineMedium", sans-serif;
+
+}
+
+
+#chatview .send img:hover {
+    transform: scale(1.1);
+}
+
+/*End message*/
+#top-nav .nav-item--custom {
+    width: 6.25rem;
+    height: 4.577rem;
+    margin-right: .5625rem;
+    background-color: #1CB6C5;
+    box-shadow: 0 .625rem 3px rgba(0, 0, 0, 0.1);
+    transition: all .3s ease;
+}
+
+#top-nav .nav-item--custom:last-child {
+    margin-right: 0;
+}
+
+
+#top-nav .nav-link--custom {
+    font-size: .875rem;
+    padding: 2.3rem 0 !important;
+    color: #fff !important;
+    text-align: center;
+    transition: width .3s ease;
+}
+
+#top-nav .nav-link--custom span {
+    font-size: .75rem;
+    font-family: 'DuCoHeadlineSmall', sans-serif;
+}
+
+#top-nav .nav-item--custom:hover {
+    background-color: #138f9c;
+    transform: translateY(-.3rem);
+    box-shadow: 0 .625rem 3px rgba(0, 0, 0, 0.3);
+}
+
+#top-nav .nav-login, #top-nav .nav-signup {
+    background-color: white;
+    padding: 1.7rem 0;
+    width: 13.8rem;
+    height: 4.577rem;
+    text-align: right;
+}
+
+#top-nav .nav-login:hover, #top-nav .nav-signup:hover {
+    background-color: #F5F5F5;
+}
+
+
+
+#top-nav .nav-login .nav-login-link {
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    padding-right: 2rem !important;
+}
+
+#top-nav .nav-signup {
+    width: 13rem;
+    text-align: left;
+}
+
+#top-nav .nav-logout {
+    width: 9rem;
+}
+
+#top-nav .nav-user{
+    width: 17.8rem;
+}
+
+
+#top-nav .nav-signup-link {
+    padding-left: 2rem !important;
+}
+
+#top-nav .nav-signup a.nav-link, .nav-login a.nav-link {
+    color: #202020;
+}
+
+#top-nav .nav-user-link {
+
+}
+#top-nav .nav-logo {
+    position: absolute;
+}
+
+#top-nav .icon {
+    color: white;
+}
+
+
+/*------------- Slider style ----------------*/
+
+.header-slider {
+    position: relative;
+}
+
+#slider.slide {
+    margin-top: 24px;
+}
+
+#slider .carousel-item {
+    background-image: url("../img/showCase.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 46.5rem;
+}
+
+
+#slider .carousel-caption--custom {
+    top: 4%;
+    left: 20%;
+    height: 40%;
+}
+
+#slider .carousel-indicators li {
+    background-color: #fff;
+    display: inline-block;
+    border-radius: 50%;
+    width: .447rem;
+    height: .447rem;
+}
+
+#slider .carousel-indicators .active {
+    background-color: #EB3F66;
+}
+
+
+/* Slider caption */
+
+
+#slider .header-text {
+    text-align: left;
+    color: #ffffff;
+}
+
+#slider .header-text h1 {
+    line-height: 1.7;
+    font-size: 5.75rem;
+    height: 8.5rem;
+}
+
+#slider .header-text h2 {
+    font-size: 2.5rem;
+}
+
+#slider .header-text p {
+    font-size: 1.25rem;
+    margin-bottom: 1.75rem;
+    height: 2.25rem;
+    font-family: 'DuCoHeadlineSmall', sans-serif;
+}
+
+
+/*--------- Login / Sign up Form  ------------- */
+
+
+#auth-section, #forgetPassword , #started-section, #want-mery , #services-section{
+    display: block;
+    background-color: #ffffff;
+    box-shadow: 0 1.25rem 1.8rem rgba(54, 54, 54, .15);
+    position: absolute;
+    left: 14%;
+    bottom: 10%;
+    right: 10%;
+    border-radius: 20px;
+}
+
+
+#forgetPassword {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+#auth-section .tabContent {
+    display: none;
+}
+
+#auth-section .tabContent.current {
+    display: inherit;
+
+}
+
+#auth-section .currentTab {
+    border-bottom: 2px solid #E75A7A;
+    border-right: 1px solid rgba(122, 122, 122, .12);
+}
+
+#auth-section .auth-nav {
+    width: 70%;
+    margin: auto;
+}
+
+.auth-header {
+    font-size: 1.56rem;
+}
+
+#auth-section .form-group--custom {
+    width: 80%;
+}
+
+#auth-section .form-check-inline {
+    margin-bottom: 1.35rem;
+    margin-right: 6.5%;
+}
+
+#auth-section .tab--custom {
+    width: 70%;
+    text-align: center;
+    cursor: pointer;
+    color: #202020;
+    font-size: 1.375rem;
+}
+
+#auth-section .login-form {
+    border-right: 1px solid rgba(0, 0, 0, 0.12);
+    z-index: 20;
+}
+
+
+#auth-section .form-group--custom input {
+    height: 2.875rem;
+}
+
+#auth-section input::placeholder, #forgetPassword input::placeholder {
+    font-family: 'DuCoHeadlineSmall', sans-serif;
+    color: rgba(32, 32, 32, 0.5);
+    font-size: 1rem;
+}
+
+/*social*/
+#auth-section .fa-facebook-f {
+    color: #EB3F66;
+    margin-right: 3.125rem;
+}
+
+
+#auth-section .social {
+    margin-top: 1.33rem;
+}
+
+#auth-section .fa-twitter {
+    color: #1CB6C5;
+    margin-right: 3.125rem;
+
+}
+
+#auth-section .fa-linkedin-in {
+    color: #1F2026;
+}
+
+
+/* Radio button custom style*/
+
+.form-check-input--custom {
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+
+}
+
+.check-wrapper {
+    position: relative;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 1rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.check-wrapper input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.check {
+    position: absolute;
+    top: .2rem;
+    left: -3px;
+    height: 1.25rem;
+    width: 1.25rem;
+    background-color: #ffffff;
+    border: 2px solid #E2E2E2;
+    border-radius: 50%;
+}
+
+.check-wrapper:hover input ~ .check {
+    background-color: #FCE7E7;
+}
+
+.check-wrapper input:checked ~ .check {
+    background-color: #EB3F66;
+    border: 5px solid #E2E2E2;
+}
+
+.check-wrapper:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.check-wrapper input:checked ~ .check:after {
+    display: block;
+}
+
+.check-wrapper .check:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+
+.btn-danger--custom {
+    background-color: #EB3F66;
+    color: #ffffff !important;
+    font-size: 1.25rem;
+    font-family: 'DuCoHeadlineMedium', sans-serif;
+    transition: all .6s ease;
+    border: 2px solid #EB3F66;
+}
+
+.btn-danger--custom:hover, .btn-danger--custom:focus {
+    background-color: #ffffff;
+    color: #EB3F66 !important;
+    border: 2px solid #EB3F66;
+    box-shadow: none;
+}
+
+.checkbox-wrapper {
+    position: relative;
+    padding-left: 1.3rem;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: .875rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: 'DuCoHeadlineSmall', sans-serif;
+}
+
+/*.forget-pass {*/
+/*    font-size: .875rem;*/
+/*    font-family: 'DuCoHeadlineSmall', sans-serif;*/
+/*    color: #202020;*/
+
+/*}*/
+
+.last-form {
+    margin: 1.5rem 0;
+}
+
+
+/* Hide the browser's default checkbox */
+.checkbox-wrapper input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: .2rem;
+    left: -.3rem;
+    height: 1.07rem;
+    width: 1.07rem;
+    border-radius: 3px;
+    background-color: #fff;
+    border: 2px solid #E2E2E2;
+}
+
+.checkbox-wrapper .checkmark::after {
+    left: .22rem;
+    top: 0;
+    width: 5px;
+    height: 10px;
+    border: solid #EB3F66;
+    border-width: 0 1.5px 1.5px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.checkbox-wrapper:hover input ~ .checkmark {
+    background-color: #FCE7E7;
+}
+
+.checkbox-wrapper input:checked ~ .checkmark {
+    background-color: #ffffff;
+}
+
+.checkbox-wrapper input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+
+/*---------- Forget Password Style ---------*/
+
+#forgetPassword .left-section {
+    padding-left: 13%;
+}
+
+#forgetPassword .left-icon-section {
+    padding-left: 1.5%;
+}
+
+#forgetPassword .custom-link {
+    font-size: .875rem;
+    color: #404040 !important;
+}
+
+#forgetPassword .custom-link:hover, #forgetPassword .custom-link:focus {
+    color: #E75A7A !important;
+    text-decoration: none;
+}
+
+#forgetPassword .icon {
+    color: #EB3F66;
+    padding-right: 1rem;
+}
+
+#forgetPassword .form-group--custom input {
+    height: 2.875rem;
+    width: 76%;
+    border-radius: 7px;
+}
+
+#forgetPassword .forget {
+    font-size: 1.5625rem;
+}
+
+#forgetPassword .newPassword {
+    font-size: .875rem;
+}
+
+#forgetPassword .right-section {
+    text-align: center;
+}
+
+
+/*--------- best mery style ----------*/
+
+
+#best-mery .mery-header {
+    text-align: center;
+    font-size: 1.5625rem;
+    margin-top: 2.6rem;
+}
+
+#best-mery .line {
+    width: 6rem;
+    height: 4px;
+    background-color: #EB3F66;
+    border-radius: 20px;
+}
+
+#best-mery .radial-line {
+    border: 5px solid #EB3F66;
+    width: 140px;
+    padding: 0.5em;
+    border-radius: 50%;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    /* border-top-color: transparent; */
+    height: 100px;
+    border-top: unset;
+    margin-top: -80px;
+
+
+}
+
+#best-mery .form-group--custom {
+    width: 30%;
+}
+
+#best-mery .form-group--custom button:hover, .best-mery .form-group--custom button:focus {
+    background-color: white;
+    color: #EB3F66 !important;
+    border: 2px solid #EB3F66;
+}
+
+#best-mery .name {
+    font-size: 1.375rem;
+    font-family: 'DuCoHeadlineMedium', sans-serif;
+    text-align: center;
+}
+
+#best-mery .stars {
+    color: #EB3F66;
+}
+
+#best-mery .age {
+    font-size: 1rem;
+    font-family: 'DuCoHeadlineSmall', sans-serif;
+    color: #202020;
+    text-align: center;
+}
+
+/*-------- slick Slider --------*/
+
+
+.sliderSlider {
+    position: relative;
+}
+
+.slick-slide {
+    margin: 0 20px;
+}
+
+.slick-slide img {
+    width: 90%;
+    margin-top: 50px;
+    opacity: .5;
+}
+
+
+div.slide.slick-slide.slick-current.slick-active.slick-center img {
+    transform: scale(1.5, 1.5);
+    margin-bottom: 50px;
+    opacity: 1;
+    object-fit: cover;
+}
+
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.slick-list:focus {
+    outline: none;
+}
+
+.slick-list.dragging {
+    cursor: pointer;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+
+.slick-track:before,
+.slick-track:after {
+    display: table;
+    content: '';
+}
+
+.slick-track:after {
+    clear: both;
+}
+
+.slick-loading .slick-track {
+    visibility: hidden;
+}
+
+.slick-slide {
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+
+[dir='rtl'] .slick-slide {
+    float: right;
+}
+
+.slick-slide img {
+    display: block;
+}
+
+.slick-slide.slick-loading img {
+    display: none;
+}
+
+.slick-slide.dragging img {
+    pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+    display: block;
+}
+
+.slick-loading .slick-slide {
+    visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+.prev, .next {
+    display: none;
+    position: absolute;
+    top: 40%;
+    color: #202020;
+    cursor: pointer;
+}
+
+.prev:hover, .next:hover {
+    color: rgba(0, 0, 0, .6);
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+
+/*-------------- Home Page Style ----------*/
+#started-section , #want-mery, #services-section{
+    opacity: .92;
+    left: 11%;
+    bottom: 7%;
+    width: 80%;
+    margin: auto;
+}
+
+
+
+.main-heading {
+    font-size: 1.5625rem;
+}
+
+.line {
+    height: 4px;
+    background-color: #E75A7A;
+    width: 5.62rem;
+    border-radius: 5px;
+    margin-left: 3rem;
+    margin-top: .75rem;
+}
+
+#started-section .right-heading , .main-heading {
+    padding-top: 1.37rem;
+}
+
+#started-section .mobile-header {
+    display: none;
+}
+
+#started-section .right-heading {
+    line-height: .9;
+}
+
+#started-section .text-red {
+    color: #EB3F66;
+}
+
+#started-section .text-blue {
+    color: #1CB6C5;
+}
+
+#started-section .right-heading p,#started-section .media-body small {
+    font-size: .875rem;
+    color: #202020;
+}
+
+#started-section .row-wrapper {
+    width: 95%;
+    margin: 0 auto;
+}
+
+#started-section .media-custom {
+    margin-top: 2.5rem;
+}
+
+#started-section .left-side {
+    border-right: 1px solid rgba(0,0,0,0.33);
+}
+
+#started-section .media-btn {
+    margin-bottom: 3.8rem;
+    margin-top: 1.4rem;
+}
+
+#started-section .media-body h4 {
+    margin-top: 2rem;
+    color: #202020;
+    line-height: .5;
+    font-size: 1.37rem;
+}
+
+#started-section .media-body small {
+    font-family: 'DuCoHeadlineSmall', sans-serif ;
+}
+
+#started-section .left-side {
+    border-right: 1px solid rgba(0,0,0,0.4);
+}
+
+
+#started-section .btn-find {
+    width: 21.4rem;
+}
+
+#started-section .btn-primary--custom {
+    background-color: #1CB6C5;
+    color: #ffffff !important;
+    font-size: 1.25rem;
+    font-family: 'DuCoHeadlineMedium', sans-serif;
+    transition: all .6s ease;
+    border: 2px solid #1CB6C5;
+
+}
+
+#started-section .btn-primary--custom:hover ,#started-section .btn-primary--custom:focus {
+    background-color: #fff;
+    color: #1CB6C5 !important;
+    border: 2px solid #138f9c;
+}
+
+#started-section .custom-link {
+    color: #202020;
+}
+
+#started-section .custom-link:hover, #started-sectionsection .custom-link:focus {
+    color: #979292;
+    text-decoration: none;
+}
+
+
+
+/*--------- I Want mery page style ---------*/
+
+#want-mery .start{
+    padding-top: 1.7rem;
+    font-size: .875rem;
+    padding-left: 12%;
+}
+
+#want-mery .main-heading {
+    margin-left: 15%;
+}
+
+#want-mery .line {
+    margin-left: 35%;
+}
+
+#want-mery .icon{
+    padding-left: 12%;
+    color: #EB3F66;
+}
+
+#want-mery .right-heading {
+    padding-top: 1.37rem;
+}
+
+#want-mery .row-wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+#want-mery .img-wrap {
+    width: 5rem;
+    height: 5rem;
+    display: inline-block;
+    padding-top: 12px;
+    border: 2px solid #E8E8E8;
+    background-color: #fff;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+#want-mery .img-paragraph{
+    font-size: .875rem;
+    width: 85%;
+    margin-top: 5%;
+}
+
+#want-mery .img-paragraph.p{
+    margin-bottom: 1.4rem;
+}
+
+#want-mery .image{
+    margin: auto;
+    justify-content: center;
+    display: flex;
+}
+
+
+#want-mery .middle-line{
+    width: 100%;
+    height: 2px;
+    background-color: #E8E8E8;
+    margin: auto;
+}
+
+#want-mery .line-right{
+    border-right: 2px solid #E8E8E8;
+    height: 100%;
+}
+
+#want-mery .bottom{
+    padding-top: 13%;
+}
+
+
+/*----------- Services Header style ----------- */
+
+#services-section {
+    bottom: 10%;
+}
+
+#services-section .row-wrapper {
+    width: 70%;
+    margin: 0 auto;
+}
+
+#services-section .line {
+    margin: 0 auto 1.937rem auto;
+}
+
+#services-section .media {
+    margin-top: .5rem;
+    padding: 1rem;
+}
+
+#services-section .media-img {
+    margin-right: 1rem;
+}
+
+#services-section .media-body h4 {
+    font-size: 1rem;
+    color: #202020;
+    margin-top: 1.5rem;
+    line-height: 1.2;
+}
+
+
+#services-section .services-row {
+    margin-bottom: .5rem;
+    padding-bottom: 1.5rem;
+}
+
+
+#services-section h4:hover {
+    color: #E75A7A;
+}
+
+#services-section a:hover, #service-section a:focus {
+    text-decoration: none;
+}
+
+#services-section .col-custom {
+    border-top: 2px solid #E8E8E8;
+    border-right: 2px solid #E8E8E8;
+    padding-right: 0;
+
+}
+
+#services-section .col-custom--1 {
+    border-right: 2px solid #E8E8E8;
+}
+
+#services-section .col-custom--1:nth-child(3){
+    border-right: none;
+}
+
+
+#services-section .col-custom:last-child{
+    border-bottom: none;
+    border-right: none;
+}
+
+.main-footer .app{
+    width: 35%;
+    margin: 0;
+}
+
+
+
+/*---------- Notification Style ----------*/
+
+.line--1{
+    height: 4px;
+    background-color: #E75A7A;
+    width: 6rem;
+    border-radius: 5px;
+    margin-bottom: 1.68rem;
+
+}
+#notification .nav-pills .nav-link.active{
+    background-color: unset!important;
+    border-bottom: 2px solid #EB3F66;
+    color: #EB3F66;
+    border-radius: unset;
+
+}
+
+#notification .nav-pills .nav-link{
+    color: #1F2026;
+    font-size: 1.125rem;
+    border-bottom: 2px solid #ECECEC;
+
+}
+
+#notification .navigation{
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    height: 12%;
+}
+
+
+#notification .righ-line{
+    width: 2px;
+    height: 62%;
+    background-color: #ECECEC;
+}
+
+#notification .mery-heba,#notification .paragraph{
+    font-size: 1rem;
+}
+
+#notification .age{
+    font-size: .75rem;
+    color: #C2C2C2;
+}
+
+#notification .media{
+    border: 2px solid #DBDBDB;
+    padding: 2%;
+    border-radius: 10px;
+}
+
+
+/*-------------- Job Posts Page Style --------*/
+
+.job-posts {
+    font-size: 1.5624rem;
+    margin-top: 2.62rem;
+}
+
+.job-header {
+    width: 80%;
+    margin: auto;
+}
+
+.posts .media {
+    padding: 2%;
+}
+
+
+/*--- Search bar style ---*/
+
+.form-group--custom {
+    margin-bottom: 0;
+    width: 50%;
+}
+
+.input-group-text, .search-input {
+    border: none;
+    background-color: #fff;
+}
+
+.input-group-text span {
+    padding-right: .5rem;
+    border-right: 1px solid #E8E8E8;
+    color: #1F2026;
+}
+
+.input-group-text .right-text {
+    padding-left: .5rem;
+    margin-right: 2rem;
+
+}
+
+#page-content .inp{
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.inp-l {
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+
+.search-bar {
+    padding: .5rem 2rem;
+    background-color: #F5F5F5;
+    border-radius: 7px;
+    /*margin-bottom: 2.06rem;*/
+    width:80%;
+    margin: auto 10%;
+}
+
+.search-input:focus {
+    box-shadow: none;
+}
+
+.search-bar input::placeholder {
+    font-size: .75rem;
+    line-height: 1.5;
+    height: auto;
+}
+.btn-search {
+    background-color: #E75A7A;
+    border-radius: 7px;
+    height: 1.875rem;
+    width: 5.1rem;
+    position: relative;
+    top: .21rem;
+    left: -2rem;
+}
+
+.btn-search .btn-text {
+    color: #fff !important;
+    position: absolute;
+    top: 0;
+    left: 20%;
+}
+
+.btn-search .btn-text:hover {
+    text-decoration: none;
+}
+
+
+/*--------------- Job post Style ---------------*/
+
+.job-wrapper {
+    border: 1px solid #E8E8E8;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    width: 72%;
+    position: relative;
+    padding-bottom: 0!important;
+    margin-top: .75rem !important;
+}
+
+.posts .job-wrapper:first-of-type {
+    border: 1px solid #E75A7A;
+    margin-top: 2rem !important;
+
+}
+
+.job-wrapper .job-title {
+    font-size: 1rem;
+    color: #202020;
+    margin-bottom: 0;
+
+}
+
+.job-wrapper .post-time {
+    position: absolute;
+    top: 10%;
+    right: 3%;
+    font-size: .75rem;
+    color: #C2C2C2;
+}
+
+.job-wrapper .job-location {
+    font-size: .875rem;
+    color: #1F2026;
+    opacity: .5;
+}
+
+
+.job-wrapper .job-duration {
+    font-size: .875rem;
+    color: #1F2026;
+    margin-bottom: 0;
+}
+.job-wrapper .dur {
+    color: #1CB6C5;
+    padding-right: 1rem;
+}
+
+.job-wrapper .job-description {
+    font-size: 1rem;
+    color: #202020;
+    width: 55% ;
+}
+
+.job-wrapper .more {
+    font-size: .875rem;
+    padding-bottom: 2rem;
+    display: inline-block;
+    color: #EB3F66 !important;
+}
+.job-wrapper .more:hover, .job-wrapper .more:focus {
+    text-decoration: none;
+    color: #F58AA2 !important;
+}
+
+.more img {
+    margin-left: .8rem;
+}
+
+.posts .job-wrapper:last-of-type {
+    margin-bottom: 4.71rem;
+
+}
+
+
+/*------------ pagination style --------------*/
+
+.nav-pagination {
+    background-color: #F5F5F5;
+    height: 3.25rem;
+    width: 76%;
+}
+
+.page-link {
+    border: none;
+    font-size: .875rem;
+    color: #1F2026;
+    top: 25%;
+}
+
+.page-link {
+    background-color: #F5F5F5 ;
+}
+.pagination .page-item:last-child .page-link:last-of-type {
+    background-color: #E5E5E5;
+}
+
+.page-link:focus {
+    box-shadow: none;
+}
+
+.page-item.active .page-link{
+    color: #1F2026;
+    border-radius: 3px;
+    background-color: #fff;
+    border: 1px solid #EB3F66;
+}
+
+
+/*Filter posts page style */
+.filter-bar .left-text, .filter-bar .right-text {
+    padding-right: .5rem;
+    border-right: 1px solid #E8E8E8;
+    color: #1F2026;
+}
+
+.filter-bar .input-group-text.filter-box {
+    color: #fff;
+    background-color: #1CB6C5;
+    width: 60%;
+    padding-right: 1.3rem;
+    border-radius: 7px !important;
+
+}
+
+
+.filter-bar .input-group-text .right-text {
+    padding-left: .5rem;
+    margin-right: 2rem;
+    border: none;
+    font-size: .75rem;
+    color: #FFFFFF;
+
+}
+
+.filter-bar .prepend-width {
+    background-color: #FFFFFF;
+}
+
+
+.filter-bar .inp-l {
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+
+/*------------ pagination style --------------*/
+
+.filter-section .nav-pagination {
+    width: 100%;
+}
+
+/*Aside Style */
+
+.aside-wrapper {
+    padding-right: 0;
+    padding-left: 0;
+    height: auto;
+}
+
+.filter-section aside {
+    background-color: #F5F5F5;
+    margin-top: .2rem;
+    width: 100%;
+    position: relative;
+    height: 100%;
+}
+
+.label-text, .skills-label {
+    font-size: 1.125rem;
+    color: #1F2026;
+}
+
+
+.filter-section .form-select, .skills-label {
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
+.line-hor {
+    border: 1px solid #707070;
+    opacity: .33;
+    margin-bottom: .3rem;
+}
+
+.filter-section aside .form-select:first-of-type {
+    padding-top: 1.3rem;
+}
+
+.filter-section select {
+    color: #1F2026;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* Some browsers will not display the caret when using calc, fallback first */
+    background: url("http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png") white no-repeat 98.5% !important; /* !important used for overriding all other customisations */
+    background: url("../img/down.png") white no-repeat calc(100% - 10px) !important; /* Better placement regardless of input width */
+}
+
+.filter-section select:focus {
+    box-shadow: none;
+}
+
+.filter-section .checkmark {
+    left: unset;
+    right: -7rem;
+}
+
+.filter-section .checkbox-wrapper {
+    margin-bottom: .5rem;
+}
+
+.filter-section .skill-text {
+    font-size: .875rem;
+    color: #1F2026;
+}
+
+
+.filter-section .btn-custom {
+    position: absolute;
+    bottom: 1.3rem;
+}
+
+.filter-section .btn-default {
+    right: 2.5rem;
+}
+
+.filter-section .btn-red {
+    left: 2rem;
+    background-color: #EB3F66;
+    color: #FFFFFF;
+    width: 40%;
+    border: 2px solid #EB3F66;
+
+}
+
+.btn-default:focus, .btn-red:focus {
+    box-shadow: none;
+}
+
+.btn-red:hover, .btn-red:focus {
+    background-color: #FFFFFF;
+    color: #E75A7A;
+}
+
+.btn-default:hover, .btn-default:focus {
+    background-color: #E8E8E8;
+    color: #51535B;
+}
+.filter-options .form-group--custom:last-of-type {
+    padding-bottom: 7rem;
+}
+
+
+/*-------- Profile.vue Page Style ----------*/
+
+#profile-section .main-heading {
+    text-align: center;
+}
+
+#profile-section .line {
+    margin: 0 auto 1.5rem auto;
+}
+#profile-section {
+    width: 80%;
+    margin: auto;
+}
+
+#profile-section .profile-id {
+    font-size: 1.375rem;
+}
+
+#profile-section .profile-picture {
+    margin-right: 2.312rem;
+}
+
+#profile-section .location {
+    font-size: 1.25rem;
+    opacity: .5;
+    padding-left: .5rem;
+}
+
+#profile-section .location-icon {
+    padding-bottom: .2rem;
+}
+
+#profile-section .profile-about {
+    font-size: 1.25rem;
+    color: #EB3F66;
+}
+
+#profile-section .profile-list {
+    margin-top: 4rem;
+}
+
+
+
+#profile-section .list li {
+    margin-bottom: .5rem;
+}
+#profile-section .list .list-item-text {
+    text-decoration: none;
+    font-size: 1.375rem;
+    color: #1F2026;
+    padding-left: .5rem;
+}
+
+#profile-section .list li.paddingLeft1{
+    padding-left: 4rem;
+    margin-bottom: .5rem;
+    cursor: pointer;
+
+}
+
+#profile-section .media-info {
+    margin-top: 1.5rem;
+}
+
+
+#profile-section .card-wrapper {
+    width: 85%;
+    margin: auto;
+}
+
+#profile-section .card-wrapper img {
+    width: 100%;
+}
+
+/*--------- Information Section Style ---------*/
+.resume {
+    background-color: #F5F5F5;
+    border-radius: 3px;
+    margin:auto auto 1.5rem auto;
+    border: 1px solid rgba(112,112,112,.3);
+    padding-top: 4%;
+}
+
+.resume .text{
+    margin-top: 2.62rem;
+    font-size: 1.5625rem;
+
+}
+
+.resume .line--1{
+    height: 4px;
+    background-color: #E75A7A;
+    width: 6rem;
+    border-radius: 5px;
+    margin-bottom: 1.68rem;
+}
+
+.resume .resume-form {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+
+.resume .form-group{
+    background-color: #F5F5F5;
+    padding: 2px 0;
+    border-radius: 5px;
+    border: 1px solid #D9D9D9;
+
+}
+
+
+.resume .col-form-label {
+    width: 37%;
+    margin: auto;
+    padding-left: 1%;
+}
+
+.resume .input-field {
+    width: 55%;
+    margin: auto;
+
+}
+
+.resume .col-form-label--custom {
+    width: 46%;
+    margin:auto 0 auto auto;
+
+}
+
+.resume .input-field--custom {
+    width: 45%;
+    margin: auto auto auto 1%;
+}
+
+
+.resume .input-group.group1 {
+    display: inline-flex;
+    width: 28.5%;
+    margin-left: 6.5%;
+}
+
+
+.resume .input-group.group2 {
+    display: inline-flex;
+    width: 28.5%;
+}
+
+.resume .input-group-text{
+    background-color: white;
+    border: unset;
+}
+
+.resume .form-control {
+    border: none;
+
+}
+
+.resume .form-control:focus {
+    box-shadow: none;
+}
+
+.resume .row{
+    margin-left: unset;
+    margin-right: unset;
+}
+
+.resume .group1{
+    padding-left: unset;
+    padding-right: unset;
+}
+.resume .group2{
+    padding-left: 7px;
+    padding-right: unset;
+}
+.resume .gender{
+    background-color: white;
+    padding-left: 13%;
+    border-radius: 5px;
+    vertical-align: middle;
+}
+
+.resume .check-wrapper {
+    margin-bottom: 0;
+
+}
+
+.resume .male-box {
+    margin-left: .6rem;
+}
+
+.resume .check-inline {
+    padding: .5rem;
+    font-size: .875rem;
+}
+
+
+.resume select {
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* Some browsers will not display the caret when using calc, fallback first */
+    background: url("http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png") white no-repeat 98.5% !important; /* !important used for overriding all other customisations */
+    background: url("../img/down.png") white no-repeat calc(100% - 10px) !important; /* Better placement regardless of input width */
+}
+
+.resume select:focus {
+    box-shadow: none;
+}
+
+
+.resume .col-form-label {
+    font-size: 1.125rem !important;
+}
+
+.resume .input-group-prepend{
+    background-color: #fff;
+    padding: .4rem 0;
+    border: 1px solid #DBDBDB;
+    border-left: none;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.resume .right-text {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: .875rem;
+    border-left: 1px solid #E8E8E8;
+}
+
+.resume .salary-box {
+    border-right: none;
+
+}
+
+.resume .btn-save {
+    bottom: -4.5rem;
+    right: 0;
+    width: 50%;
+    margin-left: 50%;
+}
+
+.resume .btn-danger--custom {
+    width: 100%;
+    border: 2px solid #E75A7A;
+    font-size: 1rem;
+}
+
+
+.resume .custom-select {
+    top: 0;
+    border-top-right-radius: unset;
+    border-bottom-right-radius: unset;
+}
+
+.resume .mobile-number {
+    border-left: none !important;
+    border-bottom-left-radius: unset !important;
+    border-top-left-radius: unset !important;
+    border-bottom-right-radius: unset !important;
+}
+
+.resume .code-mob {
+    border-right: unset;
+}
+.resume .custom-select:focus {
+    box-shadow: unset;
+    border-color: #E2E2E2;
+}
+
+.resume .select::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 20px;
+    background-color: #ccc;
+    top: 20%;
+    left: 100%;
+}
+
+
+/*------ Referral style --------*/
+
+.referral , .job-applied {
+    background-color: #F5F5F5;
+    border-radius: 3px;
+    padding-top: 2.37rem;
+    margin:auto auto 1.5rem auto;
+    border: 1px solid rgba(112,112,112,.3);
+}
+
+
+.referral .referral-wrapper {
+    width: 50%;
+    padding-left: 2rem;
+}
+.referral .referral-header {
+    font-size:2.312rem;
+    color: #1F2026;
+}
+
+.referral .referral-description {
+    font-size: .75rem;
+    color: #1F2026;
+    opacity: .8;
+    width: 70%;
+    padding-left: 1.5rem;
+    margin-bottom: 1.937rem;
+}
+
+.referral .form-label {
+    font-size: 1.25rem;
+}
+
+.referral .input-field--link {
+    width: 75%;
+}
+
+.referral .input-field--link .form-control::placeholder{
+    color: #1F2026;
+    font-size: 1rem;
+}
+
+
+.referral .btn-danger--custom {
+    width: 50%;
+    height: 3.125rem;
+    margin-top: 2.16rem;
+    margin-bottom: 6rem;
+}
+
+
+/*-------- Job Applied Section --------*/
+.job-applied {
+    padding-top: 1.562rem;
+}
+
+
+.job-applied .content-wrapper {
+    width: 90%;
+    margin: auto;
+}
+
+.job-applied .content-wrapper--1 {
+    background-color: #fff;
+    border: 1px solid #DBDBDB;
+    border-radius: 4px;
+    margin-bottom: .375rem;
+}
+
+.job-applied .content-wrapper--1 div {
+    padding: .625rem 0 ;
+}
+
+.content-wrapper--1 p {
+    margin-bottom: 0;
+    padding-left: .7rem;
+}
+
+
+.job-applied .job-head {
+    font-size: 1rem;
+    color: #1F2026;
+    opacity: .5;
+}
+
+.job-applied hr{
+    margin-top: 0;
+}
+
+.job-applied .job-title {
+    font-size: 1rem;
+    color: #202020;
+}
+
+.job-applied .job-content , .job-status{
+    font-size: .875rem;
+    color: #1F2026;
+}
+
+.job-applied .job-status {
+    color: #EB3F66;
+}
+
+.job-applied .content-wrapper--1:last-of-type {
+    margin-bottom: 10rem;
+}
+
+
+
+/*-------- footer style ----------*/
+
+#page-footer {
+    position: relative;
+    margin-top: 5.37rem;
+}
+
+.main-footer {
+    background-color: #F5F5F5;
+    padding: 5.25rem 0;
+    margin-bottom: .625rem;
+}
+
+.app {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.app .app-btn {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.list-heading {
+    color: #111111;
+    font-size: 1rem;
+    font-family: 'Muli', sans-serif;
+    font-weight: 600;
+    text-align: left;
+}
+
+.list-unstyled li {
+    text-align: left;
+}
+
+.language-form, .form-select option, .nav-link--footer {
+    font-family: 'Muli', sans-serif;
+    font-size: .81rem;
+    font-weight: 300;
+    color: #000;
+}
+
+
+.footer-section--2 {
+    margin-top: 1rem;
+}
+
+.language-form {
+    font-weight: 600;
+
+}
+
+.nav-link--footer:hover {
+    text-decoration: none;
+    color: #565050;
+}
+
+.copyright {
+    background-color: #1F2026;
+    color: rgba(255, 255, 255, .5);
+    padding: 2.18rem 0;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* Some browsers will not display the caret when using calc, fallback first */
+    background: url("http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png") white no-repeat 98.5% !important; /* !important used for overriding all other customisations */
+    background: url("http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png") white no-repeat calc(100% - 10px) !important; /* Better placement regardless of input width */
+}
+
+.up-arrow {
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: -2.3rem;
+    border: 1px solid #F6F6F6;
+    left: 10%;
+
+}
+
+.up-arrow img {
+    padding: 1.68rem 1.43rem;
+
+}
+
+.up-arrow a {
+    color: #E75A7A !important;
+
+}
+
+.logo-wrapper {
+    position: absolute;
+    right: 10%;
+    width: 3.77rem;
+    height: 3.77rem;
+}
+
+.logo-wrapper img {
+    width: 100%;
+}
+
+.subscribe-icon {
+    color: rgba(255, 255, 255, .5);
+    margin-right: 1.5rem;
+}
+
+
+
+
+/*------------- MEDIA -------------------*/
+
+@media (min-width: 992px) and (max-width: 1200px) {
+
+
+    /*---------- Service Section Style --------------*/
+    #services-section {
+        bottom: 5.5%;
+    }
+
+
+    #services-section .row-wrapper {
+        width: 75%;
+    }
+
+
+    #services-section .media-custom {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 70%;
+        margin:0 auto;
+    }
+
+    #services-section .media-body h4 {
+        margin-top: .5rem;
+    }
+
+    #services-section .media-img {
+        margin-right: 0;
+    }
+    #services-section .login-header {
+        padding-top: .5rem;
+    }
+
+    #services-section .services-row {
+        margin-bottom: 0;
+        padding-bottom: .9rem;
+    }
+
+    .media {
+        padding: .8rem;
+    }
+
+    /*job posts page */
+    .job-wrapper .job-description {
+        width: 70%;
+    }
+
+    /*job filter*/
+    .filter-section .form-group--custom {
+        width: 70%;
+    }
+
+    /*information section*/
+    .resume .col-form-label {
+        width: 35%;
+    }
+
+    .resume .check-wrapper {
+        font-size: 1rem;
+    }
+
+    .resume .check-inline--2 {
+        margin-right: 0;
+    }
+
+    .resume .input-field--custom {
+        width: 40%;
+    }
+
+    .resume .col-form-label--custom {
+        width: 54%;
+    }
+
+    #profile-section {
+        width: 100%;
+    }
+
+    /*Referral Section Style */
+    .referral .referral-description {
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 1200px) and (max-width: 1243px) {
+    /*Login form*/
+    #auth-section {
+        bottom: 4%;
+    }
+
+
+
+}
+
+@media (max-width: 1200px) {
+
+    /*------- navbar media Style -------------*/
+    #top-nav .nav-item--custom {
+        width: 5.6rem;
+        height: 4.577rem;
+
+    }
+
+    #top-nav .nav-link--custom {
+        font-size: .675rem;
+
+    }
+
+    #top-nav .nav-login {
+        width: 10.5rem;
+        height: 4.577rem;
+
+    }
+
+    #top-nav .nav-signup {
+        width: 10.5rem;
+        height: 4.577rem;
+    }
+
+    #top-nav .nav-link--custom span {
+        font-size: .65rem;
+    }
+
+    #top-nav .nav-logo {
+        width: 4rem;
+        height: 4rem;
+    }
+
+
+    /*--------- auth media Style ----------*/
+    .check-wrapper {
+        font-size: .75rem;
+    }
+
+    #auth-section .form-check-inline {
+        margin-right: .75rem;
+    }
+
+    /*home page*/
+    #started-section .btn-find {
+        width: 18rem;
+    }
+
+    /*job filter*/
+    .filter-section .checkmark {
+        right: -3rem;
+    }
+
+    .filter-section .checkbox-wrapper {
+        margin-bottom: .375rem !important;
+    }
+}
+
+
+@media (max-width: 991.98px) {
+
+    /*-------------- navbar media Style ---------------------------*/
+    #top-nav .nav-login, #top-nav .nav-signup, #top-nav .nav-item--custom {
+        width: 80%;
+        height: 3rem;
+        margin: auto;
+        text-align: center;
+        border-bottom: 1px solid #96BABE;
+        padding: .5rem 0;
+
+    }
+
+    #top-nav .nav-link--custom {
+        padding: 0 !important;
+        font-size: .9rem;
+
+    }
+
+    #top-nav .nav-logo {
+        width: 3.25rem;
+        height: 3.25rem;
+    }
+
+    #top-nav .nav-item--custom:last-child {
+        margin-right: inherit;
+    }
+
+    #top-nav .nav-login a, #top-nav .nav-signup a {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    #top-nav .nav-login .nav-login-link {
+        padding-right: 0 !important;
+    }
+
+    #top-nav .nav-item--custom:hover {
+        transform: translateY(0);
+        box-shadow: none;
+    }
+
+    /*-------------- slider media Style -----------*/
+    #slider.slide {
+        margin-top: 0;
+    }
+
+    #slider .carousel-caption--custom {
+        top: 20%;
+    }
+
+    #slider .carousel-item {
+        background-image: url("../img/showCaseMobile.png");
+        height: 34.5rem;
+    }
+
+    #slider .header-text h1 {
+        text-align: left;
+        font-size: 4.75rem;
+        height: 6.5rem;
+    }
+
+    .carousel-indicators {
+        bottom: -9%;
+    }
+
+    #slider .carousel-indicators li {
+        background-color: #E6E6E6;
+    }
+
+
+    /*-------------- auth media Style ---------------*/
+    #auth-section, #forgetPassword , #started-section , #want-mery, #services-section{
+        position: relative;
+        left: 0;
+        right: 0;
+        background-color: #FBFBFB;
+        box-shadow: none;
+        border-radius: unset;
+
+
+    }
+
+    .auth-header {
+        text-align: center;
+        padding-top: 10%;
+        padding-left: 0 !important;
+    }
+
+
+    #auth-section .form-group--custom {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #auth-section .auth-nav {
+        padding-top: 4%;
+        padding-bottom: 6%;
+    }
+
+    #auth-section .form-check-inline {
+        display: none;
+    }
+
+    #auth-section .social {
+        margin-bottom: 12%;
+    }
+
+    #auth-section .login-form {
+        border-right: unset;
+    }
+
+    .flex-row .app {
+        width: 50%;
+        margin: .7rem auto;
+    }
+
+    .main-footer .app {
+        width: 40%;
+    }
+
+    .main-footer .app:last-of-type {
+        margin-bottom: 2rem;
+    }
+
+
+    /*------ best mery  --------*/
+    #best-mery .name {
+        font-size: .9rem;
+        margin-top: 1rem;
+    }
+
+    /*-------- forget password media Style ----------*/
+    #forgetPassword .left-icon-section {
+        display: none;
+    }
+
+    #forgetPassword img {
+        display: none;
+    }
+
+    #forgetPassword .left-section {
+        padding-left: 2%;
+        padding-top: 6%;
+    }
+
+    #forgetPassword .form-group--custom input {
+        width: 100%;
+    }
+
+    #forgetPassword .forget {
+        font-size: 1.625rem;
+    }
+
+    #forgetPassword .enterEmail {
+        font-size: .875rem;
+    }
+
+    /*------- Home Page Style -------*/
+    #started-section ,#want-mery{
+        width: 100%;
+        margin: auto;
+    }
+
+    #started-section .main-heading{
+        text-align: center;
+        padding-top: 5%;
+        padding-bottom: 3%;
+        padding-left: 0!important;
+    }
+
+    .line {
+        margin: 0 auto;
+    }
+
+    #started-section .row {
+        margin: 0;
+    }
+
+    #started-section .col-custom {
+        padding-left: 11.5rem;
+    }
+
+    .media-custom {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 70%;
+        margin:0 auto;
+    }
+
+
+    #started-section .left-side {
+        margin-top: 2.5rem;
+        border-right: none;
+    }
+
+    #started-section .right-side {
+        border-top: 1px solid rgba(0,0,0,.2);
+        padding-top: 2.5rem;
+    }
+
+    #started-section .media-body h4 {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+    }
+
+    #started-section .media-btn {
+        width: 45%;
+        margin: 1.3rem auto 2rem auto;
+        text-align: center;
+
+    }
+
+    #started-section .media-btn a {
+        width: 75%;
+    }
+
+
+    /*-------- want mery style ----------*/
+    #want-mery {
+        padding-bottom: 3%;
+    }
+
+    #want-mery .start{
+        font-size: .625rem;
+        padding-left: 2%;
+    }
+
+    #want-mery .icon{
+        font-size: 0.7rem;
+    }
+
+    #want-mery .line{
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #want-mery .middle-line{
+        display: none;
+    }
+    #want-mery .top{
+        padding-top: 13%;
+    }
+
+    #want-mery .media{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        margin:0 auto;
+    }
+
+    #want-mery .services-row{
+        margin-right: 0!important;
+        margin-left: 0!important;
+    }
+
+    #want-mery .line-right{
+        border-right: unset;
+    }
+
+    #want-mery .line-sm-right{
+        border-right: 2px solid #E8E8E8;
+    }
+
+    #want-mery .line-sm-bottom{
+        border-bottom: 2px solid #E8E8E8 ;
+    }
+
+    #want-mery .img-paragraph{
+        margin: auto;
+        margin-bottom: 1.4rem;
+    }
+    #want-mery .col-6{
+        padding-left: unset;
+        padding-right: unset;
+    }
+
+
+    /*--------- Services section style ---------*/
+    #services-section {
+        width: 100%;
+        padding-bottom: 3%;
+    }
+
+    #service-section .main-heading {
+        text-align: center;
+        padding-top: 10%;
+        padding-left: 0 !important;
+        font-size: 1.8rem;
+    }
+
+    #services-section .col-custom {
+        padding-left: 0;
+    }
+
+
+    #services-section .header-row {
+        margin: 0;
+    }
+
+    #services-section .main-heading {
+        text-align: center;
+        padding-top: 10%;
+        padding-left: 0 !important;
+    }
+
+    #services-section .col-custom--1:nth-child(4) {
+        border-right: 2px solid #E8E8E8;
+    }
+
+
+    #services-section .col-custom--3 {
+        border-left: none;
+        border-bottom: none;
+    }
+
+    #services-section .col-custom--1 {
+        border-right: 2px solid #E8E8E8;
+    }
+
+
+
+    #services-section .media {
+        padding: .6rem;
+    }
+
+    #services-section .media-body h4 {
+        margin-top: .5rem;
+        font-size: 1.3rem;
+    }
+
+    #services-section .media-img {
+        margin-right: 0;
+    }
+
+
+    /*-------- job Posts Page ------------*/
+    .search-bar {
+        width: 100%;
+        margin: auto;
+        border-radius: 0;
+    }
+
+    .search-bar .form-group--custom {
+        width: 95%;
+        margin: auto 0 auto auto ;
+
+    }
+
+    .job-wrapper {
+        width: 83%;
+        margin: auto;
+    }
+
+    .job-wrapper .job-description {
+        width: 85%;
+    }
+
+    .nav-pagination {
+
+        margin: auto;
+    }
+
+    /*-------- job filter page --------*/
+    .filter-section .checkmark {
+        right: 0;
+    }
+
+    .filter-section .search-bar {
+        width: 100%;
+        margin: auto;
+        border-radius: unset;
+    }
+
+    .filter-section .form-group--custom {
+        width: 90%;
+        margin: auto;
+    }
+
+    .filter-section .filter-section aside {
+        padding-bottom: 5rem;
+    }
+
+    .filter-section .checkbox-wrapper {
+        padding-left: 0;
+    }
+
+
+    /*Profile.vue section style*/
+    .hideShow{
+        padding-left: unset;
+        padding-right: unset;
+    }
+
+
+    #profile-section .main-heading {
+        text-align: left;
+        font-size: 1.5624rem;
+    }
+
+    #profile-section .line{
+        margin: 0 1.5rem 0 0;
+        width: 7rem;
+    }
+
+    .profile-picture {
+        margin-right: 0;
+    }
+
+
+    #profile-section .media{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        margin: 2rem auto;
+    }
+
+    .card-side {
+        background-image: unset;
+    }
+
+    /*----- Referral Section Style -----*/
+
+    .referral .referral-description {
+        width: 100%;
+    }
+
+    .referral .referral-header {
+        font-size: 1.875rem;
+    }
+
+    /*job applied */
+
+    .job-applied .job-title {
+        padding-left: 2rem;
+    }
+
+
+}
+
+
+@media (max-width: 768px) {
+
+    /*Slider Style */
+    #slider .header-text h1 {
+        text-align: left;
+        font-size: 3rem;
+        height: 3.9rem;
+    }
+
+    #slider .header-text h2 {
+        font-size: 2rem;
+        height: 1.5rem;
+    }
+
+    #slider .header-text p {
+        font-size: 1rem;
+    }
+
+
+    /*slick style*/
+    #best-mery .name {
+        font-size: .75rem;
+        text-align: center;
+        margin-top: .37rem;
+    }
+
+    #best-mery .age {
+        font-size: .5rem;
+        text-align: center;
+        opacity: .5;
+    }
+
+    .slick-slide img {
+        margin-top: 0.5rem;
+    }
+
+    .up-arrow, .logo-wrapper {
+        display: none;
+    }
+
+    #best-mery .mery-header {
+        font-size: 1.25rem;
+    }
+
+    .prev, .next {
+        display: block;
+    }
+
+    .slick-slide img {
+        opacity: 1;
+    }
+
+    div.slide.slick-slide.slick-current.slick-active.slick-center img {
+        transform: scale(1, 1);
+        margin-bottom: 0;
+
+    }
+
+    #best-mery .fa-star {
+        font-size: .75em;
+    }
+
+    #best-mery .radial-line {
+        width: 7rem;
+        border-width: 3px;
+    }
+
+    #best-mery .btn-danger--custom {
+        display: none;
+    }
+
+    /*footer section*/
+    .flex-row {
+        width: 80%;
+        margin: auto;
+    }
+
+
+    .footer-section--1 {
+        width: 85%;
+        margin: auto;
+    }
+
+
+    .footer-section {
+        margin-bottom: 3.25rem;
+    }
+
+
+    .copyright--flex {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-social {
+        margin-bottom: 1rem;
+    }
+
+    #slider .carousel-indicators li {
+        background-color: #E6E6E6;
+    }
+
+    /*forget password style */
+    #forgetPassword .left-section {
+        padding-top: 10%;
+    }
+
+    #forgetPassword .enterEmail {
+        width: 70%;
+    }
+
+    /*-------- Home page Style -----------*/
+    .main-heading{
+        font-size: 1rem;
+    }
+
+    #started-section .col-custom {
+        display: none;
+    }
+
+    #started-section  .line {
+        display: none;
+    }
+
+    .media-custom {
+        margin: 0 auto;
+    }
+
+    #started-section .media-btn {
+        display: none;
+
+    }
+
+    #started-section  .media-body {
+        margin-bottom: 2rem;
+    }
+
+    #started-section .desktop-header {
+        display: none;
+    }
+
+    #started-section .mobile-header {
+        display: block;
+    }
+
+    /*Service section style */
+    #services-section .media-custom {
+        width: 60%;
+        padding-left: 0;
+        padding-right: 0;
+        margin: auto;
+    }
+
+    #service-section .main-heading  {
+        font-size: 1.5rem;
+    }
+
+    #services-section .media-body h4 {
+        font-size: 1rem;
+    }
+
+    #services-section .card-wrapper{
+        display: none;
+    }
+
+    /*------ Job Posts Page --------*/
+    .job-wrapper {
+        width: 95%;
+    }
+    .job-wrapper .job-description {
+        width: 100%;
+    }
+
+    .job-wrapper .more {
+        padding-bottom: 1rem;
+    }
+
+    /*Profile.vue page style */
+    #profile-section {
+        width: 100%;
+    }
+
+    #profile-section .profile-container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+
+    #profile-section .media-custom {
+        width: 60%;
+        padding-left: 0;
+        padding-right: 0;
+        margin: auto;
+    }
+
+    #profile-section .media-body h4 {
+        font-size: 1rem;
+    }
+
+    #profile-section .card-wrapper{
+        display: none;
+    }
+
+    .list li.paddingLeft1 {
+        padding-left: 0;
+    }
+
+    #profile-section .profile-list {
+        margin-top: 0;
+    }
+
+
+    /*Information section */
+    .resume .col-form-label {
+        font-size: .75rem !important;
+    }
+
+    .resume .check-inline {
+        padding: .5rem;
+        font-size: .687rem !important;
+    }
+
+    .resume .check-wrapper input:checked ~ .check {
+        border-width: 3px;
+    }
+
+    .resume .check {
+        width: .75rem;
+        height: .75rem;
+    }
+
+    .resume .check-wrapper {
+        font-size: .687rem;
+    }
+
+    .resume .gender {
+        padding-left: 0;
+    }
+
+    .resume .check-inline--2 {
+        margin-right: 0;
+    }
+
+    .resume .btn-save {
+        margin-left: 8%;
+        width: 85%;
+
+    }
+
+    .resume .form-control {
+        font-size: .75rem;
+    }
+
+    .resume select {
+        font-size: .75rem;
+    }
+
+    /*Job Applied Section */
+    .job-applied .content-wrapper {
+        width: 85%;
+    }
+
+    .job-applied .content-wrapper--1 p {
+        font-size: .75rem;
+    }
+    .job-applied .row-header , .job-applied hr {
+        display: none;
+    }
+
+    /*Footer*/
+
+    .main-footer .app {
+        width: 60%;
+    }
+}
+
+@media (max-width: 576px) {
+
+    /*--------------- slider Style ------------*/
+    #slider .carousel-caption--custom {
+        top: 10%;
+    }
+
+    #slider .header-text h1 {
+        font-size: 2.75rem;
+        height: 3.6rem;
+    }
+
+    #slider .header-text h2 {
+        font-size: 1.1875rem;
+        height: 1.18rem;
+    }
+
+    #slider .header-text p {
+        font-size: .562rem;
+    }
+
+    #slider .header-text {
+        margin-top: 10%;
+    }
+
+    #slider .carousel-item {
+        background-image: url("../img/showCaseMobile.png");
+        height: 12.75rem;
+    }
+
+    .carousel-indicators {
+        bottom: -23%;
+    }
+
+    #slider .carousel-indicators li {
+        background-color: #E6E6E6;
+    }
+
+    #top-nav.pos {
+        z-index: 50;
+    }
+
+
+    /*auth section */
+    #auth-section .form-group--custom {
+        width: 100%;
+    }
+
+
+    /*Home Page Style */
+
+    #started-section  .main-heading {
+        display: none;
+    }
+
+    .media-custom {
+        margin-top: 1.5rem;
+    }
+
+    #started-section  .media-body {
+        margin-top: 1rem;
+        margin-bottom: .3rem;
+        line-height: 1;
+    }
+
+    #started-section .right-side {
+        margin-top: 1rem;
+        padding-top: 1.5rem;
+    }
+
+    #started-section  .media-body h4 {
+        font-size: .937rem;
+    }
+
+    #started-section .media-body small {
+        font-size: .56rem;
+    }
+
+    #started-section .media-body--2 {
+        margin-bottom: 1.3rem;
+    }
+
+    /*services*/
+    #services-section .row-wrapper {
+        width: 90%;
+    }
+    /*notification style*/
+    #notification .paragraph{
+        font-size: .875rem;
+    }
+
+    #notification .nav-pills .nav-link{
+        font-size: 1rem;
+
+    }
+
+    #notification .navigation{
+        display: flex;
+        justify-content: center;
+    }
+
+    #notification .activities{
+        margin-left: unset!important;
+    }
+
+    /*Job Posts */
+    .job-header {
+        width: 100%;
+    }
+    .form-group--custom {
+        width: 100%;
+    }
+
+    .job-wrapper .job-description {
+        font-size: .875rem;
+    }
+
+    .nav-pagination {
+        display: none;
+    }
+
+    .posts-section .bar--width {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .search-input {
+        padding-left: 0;
+    }
+
+    .search-bar .input-group {
+        height:2.31rem;
+    }
+
+    .search-bar .right-text {
+        visibility: hidden;
+        width: 0;
+        padding-left: 0!important;
+        margin-right: 1rem !important;
+    }
+
+    .filter-icon {
+        padding-right: .5rem;
+        margin-right: .5rem;
+        border-right: 1px solid #E8E8E8;
+    }
+    .search-bar .left-text {
+        font-size: .75rem;
+    }
+
+    .btn-search {
+        width: 3.75rem;
+        left: 1rem;
+    }
+
+    .btn-search .btn-text {
+        top: 10%;
+        font-size: .75rem;
+    }
+
+    .prepend-width {
+        width: 10%;
+    }
+
+    .posts .job-wrapper:last-of-type {
+        margin-bottom: 1.5rem;
+    }
+
+    #page-footer {
+        margin-top:0;
+    }
+
+    .filter-section .job-wrapper {
+        width: 100%;
+    }
+
+    /*--------- profile style ------*/
+    #profile-section .profile-id , .list a{
+        font-size: 1.125rem;
+    }
+
+    #profile-section .location, #profile-section .profile-about{
+        font-size: 1.06rem;
+    }
+
+    #profile-section .profile-heading {
+        font-size: 1.53rem;
+    }
+
+    #profile-section .line {
+        width: 6rem;
+    }
+
+    #profile-section .pic-wrapper {
+        width: 50%;
+    }
+
+    #profile-section .pic-wrapper img{
+        width: 100%;
+    }
+
+    #profile-section .profile-list {
+        margin-bottom: 4rem;
+    }
+
+    #profile-section .list .list-item-text {
+        font-size: 1.125rem;
+    }
+
+    /*Referral Sectio Style */
+    .referral .referral-wrapper {
+        width: 100%;
+        padding-left: 1.375rem;
+    }
+    .referral .referral-header {
+        font-size: 1.8125rem;
+    }
+
+    .referral .referral-description {
+        padding-left: 0;
+    }
+
+    .referral .btn-danger--custom {
+        width: 60%;
+    }
+
+    .job-applied .job-title {
+        padding-left: .7rem;
+    }
+
+
+}
+
+
+@media (max-width: 343px){
+    #want-mery .line-sm-bottom{
+        padding-left: 5%;
+    }
+
+    #want-mery .img-paragraph{
+        width: 100%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1099.98px) {
+
+
+    #want-mery .start{
+        padding-left: 0;
+    }
+
+    #want-mery .row-wrapper {
+        width: 100%;
+    }
+
+    #want-mery .services-row{
+        margin-top: 1.5rem!important;
+        margin-bottom: 1.5rem!important;
+    }
+
+}
+
+@media (max-width: 390px) {
+
+    .job-wrapper .job-description {
+        font-size: 0.78rem !important;
+    }
+
+    .resume .col-form-label {
+        width: 35%;
+        padding-left: 0;
+    }
+
+    .resume  .col-form-label--custom {
+        width: 50%;
+    }
+
+    .resume  .input-field--custom {
+        width: 40%;
+    }
+}
+

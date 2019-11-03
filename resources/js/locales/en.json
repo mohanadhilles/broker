@@ -1,0 +1,234 @@
+{
+    "title": "Mery",
+    "sub_title": "Let's get started. Choose an option.",
+    "sub_title_right": "we are one family",
+    "sub_title_right_bottom":"Search for house helper",
+
+    "sub_title_left": "we are one family",
+    "sub_title_left_bottom": "Search for house helper",
+    "helper_title": "Mery House Helpers",
+    "agency_title": "Mery Agency",
+    "employer_title":"Mery Employer",
+    "refresh": "Refresh",
+    "find": "Find Mery",
+    "next": "Next",
+    "more": "View More",
+    "load": "Load More",
+    "reset": "Reset",
+    "search": "Search",
+    "filter": "Filter",
+    "upload": "Upload",
+    "update": "Update",
+    "nationality": "Nationality",
+    "need_mery_home": "I want to be house helper",
+    "need_mery_sub": " I want to be house helper",
+    "need_mery_bottom": "Create a free profile and search for jobs.",
+    "mery_member": "I want to be a Member of Mery",
+    "work_mery": " I want to Work with Mery",
+    "want_mery_member":"I want to be a Member of Mery",
+    "start_you": "Start your free search for Mery in your area.",
+    "with_mery": " I want to Work with Mery",
+    "see_all":"see all",
+    "logout": "logout",
+    "home": "Home",
+    "years": "years old",
+    "continue" : "Continue",
+    "send": "Send",
+    "back": "Back",
+    "address": "address",
+    "section": {
+        "title": "What kind of service you looking for?"
+    },
+
+    "nav": {
+        "home": "Home",
+        "need_mery": "Find Mery",
+        "about": "About Mery",
+        "contact": "Contact Mery",
+        "become": "Become Mery",
+        "become_agency": "Become partner Agency"
+    },
+
+    "register": {
+        "title": "Sign up",
+        "helper": "Helper",
+        "employer": "Employer",
+        "agency": "Agency"
+    },
+    "login": {
+        "title": "Log In",
+        "welcome": "Welcome to mery",
+        "social": "login with",
+        "remember": "Remember me",
+        "or": "Or"
+    },
+    "about": {
+        "title": "About mery"
+    },
+    "term": {
+        "title": "Terms and conditions"
+    },
+    "privacy": {
+        "title": "Privacy policy"
+    },
+    "profile": {
+        "title": "Profile Mery",
+        "modal_title": " mery platform for house helpers",
+        "complete": "Profile Completed",
+        "notComplete": "Fill data to complete your profile",
+        "photo": "change photo",
+        "buttonChange": "change photo",
+        "info": "Information",
+        "name": "Name",
+        "date_birth": "Date of birth",
+        "passport": "Passport No.",
+        "height": "Height",
+        "weight": "Weight",
+        "marital": "Marital Status",
+        "gender": "Gender",
+        "male": "Male",
+        "female": "Female",
+        "contract": "Contract Type",
+        "mobile": "Mobile",
+        "expected": "Expected Salary",
+        "arabic": "Arabic Language",
+        "english": "English Language",
+        "china": "Mandarin Language",
+        "whatsapp": "WhatsApp Number",
+        "fb": "Facebook Url",
+        "yt": "Youtube Url",
+        "rel": "Religion",
+        "eud": "Educations",
+        "type": "Job Type",
+        "profile": "No. of Child",
+        "exp_passport": "Exp Passport",
+        "issue_passport": "Issue Passport",
+        "valid_visa": "Valid Visa",
+        "available": "Available At",
+        "exp": "How Many Years Of Experience",
+        "work_in": "Have you ever worked in?",
+        "current": "Current Country",
+        "nation": "Nationality",
+        "place_birth": "Place of Birth",
+        "bio": "Bio",
+        "brand": "Brand",
+        "refer": "Referral to a Friend",
+        "sub_refer": "Referral to a Friend",
+        "refer_content": " you can use this link to share your profile with other people and we will make Campaign for famous Mery",
+        "send": "send link to your friend",
+        "referal": "Referal",
+        "copy": "Copy Link",
+        "job": "jobs List",
+        "emp_name": "Employer Name",
+        "emp_email": "Employer Email",
+        "emp_phone": "Employer Phone Number",
+        "status": "Job Status",
+        "view": "View",
+        "title_job": "Title and type of job",
+        "wanted": "Wanted At for Work",
+        "gender_worker": "Worker Gender",
+        "order": "Order Status",
+        "hire": "Hire Me",
+        "very_passport": "Verification Passport",
+        "saudi": " Saudi Arabia"
+    },
+    "track": {
+        "title": "Tracking job",
+        "sub": "Tracking Job for:"
+    },
+    "need_mery": {
+        "title": "when do you need a mery?",
+        "contract": "Full Time",
+        "soon": "Soon",
+        "sub": "Your perfect Mery is waiting.",
+        "sub_bottom": "Just a few quick questions to match the best available house helpers to your needs.",
+        "sub_bottom_again": "Tell us what your Mery should know about your home.",
+        "size": "Your house size",
+        "meters": "meters",
+        "bedroom": "How many bedrooms",
+        "child": "Child number",
+        "task": "What tasks do you expect your mery to complete?",
+        "wanted": "Want at :",
+        "type": "Job Type:",
+        "salary": "Salary : ",
+        "sub_title": "What tasks do you expect your mery to complete?"
+    },
+    "job": {
+        "title": "Job Posts",
+        "country": "Country posted Job",
+        "employer": "Employer Name",
+        "month": "per Month",
+        "skills": "Skill for Job",
+        "contract": " Contract is",
+        "place_as": "and Place as",
+        "from": "from"
+    },
+    "details": {
+        "title": "Job details",
+        "sub": "Description of Job",
+        "type": "Job Type",
+        "place": "Place Size",
+        "place_type": "Place type",
+        "bedroom": "Bedrooms",
+        "wanted": "Wanted at",
+        "child": "Child No.",
+        "salary": "Salary",
+        "month": "Month",
+        "created": "Crated by",
+        "name": "helper Name",
+        "gender": "Gender",
+        "expected": "Expected salary",
+        "code": "Code No.",
+        "apply": "Apply Job"
+
+    },
+    "chat": {
+        "title": "Messages",
+        "threads": " message threads",
+        "start": "start new chat",
+        "time": "20s ago"
+    },
+
+    "footer": {
+        "logo": "mery.com",
+        "get_help": "Get Help",
+        "discover": "Discover",
+        "home_play": "HomePay℠ - nanny tax help",
+        "list_your": "List your business",
+        "care": "Care directory",
+        "copy": "- All RIGHTS FOR MERY PLATFORM"
+    },
+    "header": {
+        "title": "About"
+    },
+
+    "notify": {
+        "title": "Notification",
+        "sub": "Job Activities",
+        "hire": "hire in",
+        "as": " - hire as"
+
+    },
+    "app":{
+        "title": "Mery Platform for House Helpers",
+        "lang": "Language"
+    },
+    "forget": {
+        "title": "Forgot your password",
+        "sub": "Enter the Code used to create the account",
+        "sub_bottom": "we will send new password to your phone No.",
+        "phone": "Enter the Phone No . used to create the account",
+        "send": "we will send new password to Phone",
+        "sub_enter": "Enter the Valid password to use  account"
+    },
+    "other": {
+        "title": "About"
+    },
+    "support": {
+        "title": "Support"
+    },
+    "static": {
+        "about": "<p class=\"p1\"><span class=\"s1\"><strong>About Mery</strong></span></p>\n<p class=\"p1\"><span class=\"s1\">For many years, the employer and house Helper have been exposed to the lack of employment transparency, inadequacy, knowledge and trust in each other.</span></p>\n<p class=\"p2\">\n  <br>\n</p>\n<p class=\"p1\"><span class=\"s1\">In 2019, Mery is the first start-up in the Middle East to integrate employers and house helpers through a smart social electronic platform to contribute in creating a transparent and motivational recruitment environment.</span></p>\n<p class=\"p2\">\n  <br>\n</p>\n<p class=\"p1\"><span class=\"s1\">Through the Mery platform, we help employers and house helpers to review the other's profile and chat with each other to build trust and learn more before agreeing to start hiring through accredited recruitment agents. Mery contributes in raising the cultural awareness of employers and House Helper through educational, awareness and motivational programs to increase the rate of career stability.</span></p>\n<p class=\"p2\">\n  <br>\n</p>\n<p class=\"p1\"><span class=\"s1\"><strong>Our work</strong></span></p>\n<p class=\"p2\">\n  <br>\n</p>\n<p class=\"p1\"><span class=\"s1\">As an employer you can register and browse thousands of House helper profiles, and look for the right helper for your house needs and review the assessment and build confidence with the House Helper before starting recruitment process.</span></p>\n<p class=\"p2\">\n  <br>\n</p>\n<p class=\"p1\"><span class=\"s1\">As a house helper, you can register and review the profile of employers and start chatting with them to find a family that suits your aspirations and your desire and get a job for free.</span></p>",
+        "privacy": "<p class=\"p1\"><span class=\"s1\"><strong>Privacy Policy:</strong></span></p>\n<p class=\"p2\">\n  <br>\n</p>\n<p class=\"p1\"><span class=\"s2\">- Mery (\"us\", \"we\", or \"our\") operates the www.mery.com website (the \"Service\").</span></p>\n<p class=\"p2\">\n  <br>\n</p>\n<p class=\"p1\"><span class=\"s2\">-This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Service and the choices you have associated with that data.<span class=\"Apple-converted-space\">&nbsp;</span></span></p>\n<p class=\"p2\">\n  <br>\n</p>\n<p class=\"p1\"><span class=\"s2\">-We use your data to provide and improve the Service. By using the Service, you agree to the collection and use of information in accordance with this policy. Unless otherwise defined in this Privacy Policy, terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, accessible from www.mery.com.</span></p>\n<p class=\"p2\">\n  <br>\n</p>\n<p class=\"p2\">\n  <br>\n</p>\n<p class=\"p1\"><span class=\"s2\"><strong>Information Collection and Use:</strong></span></p>\n<p class=\"p2\">\n  <br>\n</p>\n<p class=\"p1\"><span class=\"s2\">-We collect several different types of information for various purposes to provide and improve our Service to you.</span></p>\n<p class=\"p2\">\n  <br>\n</p>\n<p class=\"p1\"><span class=\"s2\"><strong>Types of Data Collected</strong></span></p>\n<p class=\"p2\">\n  <br>\n</p>\n<p class=\"p1\"><span class=\"s2\"><strong>Personal Data</strong></span></p>\n<p class=\"p2\">\n  <br>\n</p>\n<p class=\"p1\"><span class=\"s2\">-While using our Service, we may ask you to provide us with certain personally identifiable information that can be used to contact or identify you (\"Personal Data\"). Personally identifiable information may include, but is not limited to:</span></p>\n<ul class=\"ul1\">\n  <li class=\"li1\"><span class=\"s2\">Email address</span></li>\n  <li class=\"li1\"><span class=\"s2\">First name and last name</span></li>\n  <li class=\"li1\"><span class=\"s2\">Phone number</span></li>\n  <li class=\"li1\"><span class=\"s2\">Address, State, Province, ZIP/Postal code, City</span></li>\n  <li class=\"li1\"><span class=\"s2\">Cookies and Usage Data</span></li>\n</ul>\n<p class=\"p2\">\n  <br>\n</p>\n<p class=\"p1\"><span class=\"s2\"><strong>Usage Data</strong></span></p>\n<p class=\"p1\"><span class=\"s2\">-We may also collect information how the Service is accessed and used (\"Usage Data\"). This Usage Data may include information such as your computer's Internet Protocol address (e.g. IP address), browser type, browser version, the pages of our Service that you visit, the time and date of your visit, the time spent on those pages, unique device identifiers and other diagnostic data.</span></p>\n<p class=\"p1\"><span class=\"s2\">Tracking &amp; Cookies Data</span></p>\n<p class=\"p1\"><span class=\"s2\">- We use cookies and similar tracking technologies to track the activity on our Service and hold certain information.</span></p>\n<p class=\"p1\"><span class=\"s2\">- Cookies are files with small amount of data which may include an anonymous unique identifier. Cookies are sent to your browser from a website and stored on your device. Tracking technologies also used are beacons, tags, and scripts to collect and track information and to improve and analyse our Service.</span></p>\n<p class=\"p1\"><span class=\"s2\">-You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, if you do not accept cookies, you may not be able to use some portions of our Service.</span></p>\n<p class=\"p1\"><span class=\"s2\"><strong>-Examples of Cookies we use:</strong></span></p>\n<p class=\"p1\"><span class=\"s2\"><span class=\"Apple-converted-space\">&nbsp;</span>- We use Session Cookies to operate our Service.</span></p>\n<p class=\"p1\"><span class=\"s2\"><span class=\"Apple-converted-space\">&nbsp;</span>- We use Preference Cookies to remember your preferences and various settings.</span></p>\n<p class=\"p1\"><span class=\"s2\"><span class=\"Apple-converted-space\">&nbsp;&nbsp;</span>- We use Security Cookies for security purposes.</span></p>\n<p class=\"p2\">\n  <br>\n</p>\n<p class=\"p1\"><span class=\"s2\"><strong>Use of Data</strong></span></p>\n<p class=\"p2\"><span class=\"s2\"><span class=\"Apple-converted-space\">&nbsp; &nbsp;&nbsp;</span></span></p>\n<p class=\"p1\"><span class=\"s2\">- Mery uses the collected data for various purposes:</span></p>\n<ul class=\"ul1\">\n  <li class=\"li1\"><span class=\"s2\">To provide and maintain the Service.</span></li>\n  <li class=\"li1\"><span class=\"s2\">To notify you about changes to our Service.</span></li>\n  <li class=\"li1\"><span class=\"s2\">To allow you to participate in interactive features of our Service when you choose to do so.</span></li>\n  <li class=\"li1\"><span class=\"s2\">To provide customer care and support.</span></li>\n  <li class=\"li1\"><span class=\"s2\">To provide analysis or valuable information so that we can improve the Service.</span></li>\n  <li class=\"li1\"><span class=\"s2\">To monitor the usage of the Service.</span></li>\n  <li class=\"li1\"><span class=\"s2\">To detect, prevent and address technical issues.</span></li>\n</ul>\n<p class=\"p2\">\n  <br>\n</p>\n<p class=\"p1\"><span class=\"s2\"><strong>Transfer of Data</strong></span></p>\n<p class=\"p1\"><span class=\"s2\">-Your information, including Personal Data, may be transferred to — and maintained on — computers located outside of your state, province, country or other governmental jurisdiction where the data protection laws may differ than those from your jurisdiction.</span></p>\n<p class=\"p1\"><span class=\"s2\">-If you are located outside United Arab Emirates and choose to provide information to us, please note that we transfer the data, including Personal Data, to United Arab Emirates and process it there.</span></p>\n<p class=\"p1\"><span class=\"s2\">-Your consent to this Privacy Policy followed by your submission of such information represents your agreement to that transfer.</span></p>\n<p class=\"p1\"><span class=\"s2\">-Mery will take all steps reasonably necessary to ensure that your data is treated securely and in accordance with this Privacy Policy and no transfer of your Personal Data will take place to an organization or a country unless there are adequate controls in place including the security of your data and other personal information.</span></p>\n<p class=\"p2\">\n  <br>\n</p>\n<p class=\"p1\"><span class=\"s2\"><strong>Disclosure of Data</strong></span></p>\n<p class=\"p2\">\n  <br>\n</p>\n<p class=\"p1\"><span class=\"s2\">Legal Requirements</span></p>\n<p class=\"p1\"><span class=\"s2\">-Mery may disclose your Personal Data in the good faith belief that such action is necessary to:</span></p>\n<ul class=\"ul1\">\n  <li class=\"li1\"><span class=\"s2\">To comply with a legal obligation.</span></li>\n  <li class=\"li1\"><span class=\"s2\">To protect and defend the rights or property of Mery.</span></li>\n  <li class=\"li1\"><span class=\"s2\">To prevent or investigate possible wrongdoing in connection with the Service.</span></li>\n  <li class=\"li1\"><span class=\"s2\">To protect the personal safety of users of the Service or the public.</span></li>\n  <li class=\"li1\"><span class=\"s2\">To protect against legal liability.</span></li>\n</ul>\n<p class=\"p2\">\n  <br>\n</p>\n<p class=\"p1\"><span class=\"s2\"><strong>Security of Data</strong></span></p>\n<p class=\"p1\"><span class=\"s2\">-The security of your data is important to us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your Personal Data, we cannot guarantee its absolute security.</span></p>\n<p class=\"p2\">\n  <br>\n</p>\n<p class=\"p1\"><span class=\"s2\"><strong>Service Providers</strong></span></p>\n<p class=\"p1\"><span class=\"s2\">-We may employ third party companies and individuals to facilitate our Service (\"Service Providers\"), to provide the Service on our behalf, to perform Service-related services or to assist us in analysing how our Service is used.</span></p>\n<p class=\"p1\"><span class=\"s2\">-These third parties have access to your Personal Data only to perform these tasks on our behalf and are obligated not to disclose or use it for any other purpose.</span></p>\n<p class=\"p2\">\n  <br>\n</p>\n<p class=\"p1\"><span class=\"s2\"><strong>Analytics</strong></span></p>\n<p class=\"p1\"><span class=\"s2\">-We may use third-party Service Providers to monitor and analyse the use of our Service.</span></p>\n<p class=\"p1\"><span class=\"s2\">- Google analytics is a web analytics service. You can visit their Privacy Policy page here: https://policies.google.com/privacy\"&gt;</span></p>\n<p class=\"p2\">\n  <br>\n</p>\n<p class=\"p1\"><span class=\"s2\"><strong>Links to Other Sites</strong></span></p>\n<p class=\"p1\"><span class=\"s2\">-Our Service may contain links to other sites that are not operated by us. If you click on a third party link, you will be directed to that third party's site. We strongly advise you to review the Privacy Policy of every site you visit.</span></p>\n<p class=\"p1\"><span class=\"s2\">-We have no control over and assume no responsibility for the content, privacy policies or practices of any third party sites or services.</span></p>\n<p class=\"p2\">\n  <br>\n</p>\n<p class=\"p2\">\n  <br>\n</p>\n<p class=\"p1\"><span class=\"s2\"><strong>Children's Privacy</strong></span></p>\n<p class=\"p1\"><span class=\"s2\">-Our Service does not address anyone under the age of 18 (\"Children\").</span></p>\n<p class=\"p1\"><span class=\"s2\">-We do not knowingly collect personally identifiable information from anyone under the age of 18. If you are a parent or guardian and you are aware that your Children has provided us with Personal Data, please contact us. If we become aware that we have collected Personal Data from children without verification of parental consent, we take steps to remove that information from our servers.</span></p>\n<p class=\"p2\">\n  <br>\n</p>\n<p class=\"p1\"><span class=\"s2\"><strong>Changes to This Privacy Policy.</strong></span></p>\n<p class=\"p1\"><span class=\"s2\">-We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.</span></p>\n<p class=\"p1\"><span class=\"s2\">-We will let you know via email and/or a prominent notice on our Service, prior to the change becoming effective and update the \"effective date\" at the top of this Privacy Policy.</span></p>\n<p class=\"p1\"><span class=\"s2\">-You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.</span></p>\n<p class=\"p2\">\n  <br>\n</p>\n<p class=\"p2\">\n  <br>\n</p>\n<p class=\"p1\"><span class=\"s2\"><span class=\"Apple-converted-space\">&nbsp;</span>Contact Us</span></p>\n<p class=\"p1\"><span class=\"s2\">-If you have any questions about this Privacy Policy, please contact us:</span></p>\n<p class=\"p1\"><span class=\"s2\">By email: <strong>info@mery.com</strong></span></p>\n<p class=\"p2\"><span class=\"s2\"><span class=\"Apple-converted-space\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></span></p>",
+        "terms":"<p class=\"p1\"><span class=\"s1\"><strong>Terms and Conditions for&nbsp;Mery.com</strong></span></p>\n<p class=\"p2\"><span class=\"s1\"><strong>Introduction</strong></span></p>\n<p class=\"p3\"><span class=\"s1\">These Terms will be applied fully and affect to your use of this Website. By using mery.com, you agreed to accept all terms and conditions written in here. You must not use mery.com if you disagree with any of these Terms and Conditions.</span></p>\n<p class=\"p3\"><span class=\"s1\">Minors or people below 18 years old are not allowed to use this Website.</span></p>\n<p class=\"p2\"><span class=\"s1\"><strong>Intellectual Property Rights</strong></span></p>\n<p class=\"p3\"><span class=\"s1\">Other than the content you own, under these Terms,&nbsp;Mery.com&nbsp;and/or its licensors own all the intellectual property rights and materials contained in this Website.</span></p>\n<p class=\"p3\"><span class=\"s1\">You are granted limited license only for purposes of viewing the material contained on this Website.</span></p>\n<p class=\"p2\"><span class=\"s1\"><strong>Restrictions</strong></span></p>\n<p class=\"p3\"><span class=\"s1\">You are specifically restricted from all of the following:</span></p>\n<ul class=\"ul1\">\n  <li class=\"li4\"><span class=\"s3\">publishing any Website material in any other media;</span></li>\n  <li class=\"li4\"><span class=\"s3\">selling, sublicensing and/or otherwise commercializing any Website material;</span></li>\n  <li class=\"li4\"><span class=\"s3\">publicly performing and/or showing any Website material;</span></li>\n  <li class=\"li4\"><span class=\"s3\">using this Website in any way that is or may be damaging to this Website;</span></li>\n  <li class=\"li4\"><span class=\"s3\">using this Website in any way that impacts user access to this Website;</span></li>\n  <li class=\"li4\"><span class=\"s3\">using this Website contrary to applicable laws and regulations, or in any way may cause harm to the Website, or to any person or business entity;</span></li>\n  <li class=\"li4\"><span class=\"s3\">engaging in any data mining, data harvesting, data extracting or any other similar activity in relation to this Website;</span></li>\n  <li class=\"li5\"><span class=\"s3\">Using this Website to engage in any advertising or marketing.</span></li>\n</ul>\n<p class=\"p3\"><span class=\"s1\">Certain areas of this Website are restricted from being access by you and&nbsp;Mery.com&nbsp;may further restrict access by you to any areas of this Website, at any time, in absolute discretion. Any user ID and password you may have for this Website are confidential and you must maintain confidentiality as well.</span></p>\n<p class=\"p2\"><span class=\"s1\"><strong>Your Content</strong></span></p>\n<p class=\"p3\"><span class=\"s1\">In these Website Standard Terms and Conditions, “Your Content” shall mean any audio, video text, images or other material you choose to display on this Website. By displaying Your Content, you grant&nbsp;Mery.com&nbsp;a non-exclusive, worldwide irrevocable, sub licensable license to use, reproduce, adapt, publish, translate and distribute it in any and all media.</span></p>\n<p class=\"p3\"><span class=\"s1\">Your Content must be your own and must not be invading any third-party's rights.&nbsp;Mery.com&nbsp;reserves the right to remove any of Your Content from this Website at any time without notice.</span></p>\n<p class=\"p2\"><span class=\"s1\"><strong>No warranties</strong></span></p>\n<p class=\"p3\"><span class=\"s1\">This Website is provided “as is,” with all faults, and&nbsp;Mery.com&nbsp;express no representations or warranties, of any kind related to this Website or the materials contained on this Website. Also, nothing contained on this Website shall be interpreted as advising you.</span></p>\n<p class=\"p2\"><span class=\"s1\"><strong>Limitation of liability</strong></span></p>\n<p class=\"p3\"><span class=\"s1\">In no event shall Mery.com, nor any of its officers, directors and employees, shall be held liable for anything arising out of or in any way connected with your use of this Website whether such liability is under contract. &nbsp;Mery.com, including its officers, directors and employees shall not be held liable for any indirect, consequential or special liability arising out of or in any way related to your use of this Website.</span></p>\n<p class=\"p2\"><span class=\"s1\"><strong>Indemnification</strong></span></p>\n<p class=\"p3\"><span class=\"s1\">You hereby indemnify to the fullest extent&nbsp;Mery.com&nbsp;from and against any and/or all liabilities, costs, demands, causes of action, damages and expenses arising in any way related to your breach of any of the provisions of these Terms.</span></p>\n<p class=\"p2\"><span class=\"s1\"><strong>Severability</strong></span></p>\n<p class=\"p3\"><span class=\"s1\">If any provision of these Terms is found to be invalid under any applicable law, such provisions shall be deleted without affecting the remaining provisions herein.</span></p>\n<p class=\"p2\"><span class=\"s1\"><strong>Variation of Terms</strong></span></p>\n<p class=\"p3\"><span class=\"s1\">Mery.com&nbsp;is permitted to revise these Terms at any time as it sees fit, and by using this Website you are expected to review these Terms on a regular basis.</span></p>\n<p class=\"p2\"><span class=\"s1\"><strong>Assignment</strong></span></p>\n<p class=\"p3\"><span class=\"s1\">The&nbsp;Mery.com&nbsp;is allowed to assign, transfer, and subcontract its rights and/or obligations under these Terms without any notification. However, you are not allowed to assign, transfer, or subcontract any of your rights and/or obligations under these Terms.</span></p>\n<p class=\"p2\"><span class=\"s1\"><strong>Entire Agreement</strong></span></p>\n<p class=\"p3\"><span class=\"s1\">These Terms constitute the entire agreement between&nbsp;Mery.com&nbsp;and you in relation to your use of this Website, and supersede all prior agreements and understandings.</span></p>\n<p class=\"p2\"><span class=\"s1\"><strong>Governing Law &amp; Jurisdiction</strong></span></p>\n<p class=\"p3\"><span class=\"s1\">These Terms will be governed by and interpreted in accordance with the laws of the State of Country, and you submit to the non-exclusive jurisdiction of the state and federal courts located in Country for the resolution of any disputes.</span></p>"   }
+}

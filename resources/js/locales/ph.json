@@ -1,0 +1,236 @@
+{
+    "title": "Mery",
+    "sub_title": "讓我們開始吧。 選擇一個選項.",
+    "sub_title_right": "Mery Care to all of Your Love Ones.",
+    "sub_title_right_bottom":"Search for after-school sitters, nannies, senior care and more.",
+
+    "sub_title_left": "Care for all you love.",
+    "sub_title_left_bottom": "Search for after-school sitters, nannies, senior care and more.",
+
+    "helper_title": "Mery House Helpers",
+    "agency_title": "Mery Agency",
+    "employer_title":"Mery Employer",
+    "refresh": "Refresh",
+    "find": "Find Mery",
+    "next": "Next",
+    "more": "View More",
+    "load": "Load More",
+    "reset": "Reset",
+    "search": "Search",
+    "filter": "Filter",
+    "upload": "Upload",
+    "update": "Update",
+    "nationality": "Nationality",
+    "need_mery_home": "I want to be a Member of Mery",
+    "need_mery_sub": " I want to be a Member of Mery",
+    "need_mery_bottom": "Create a free profile and search for jobs.",
+    "mery_member": "I want to be a Member of Mery",
+    "work_mery": " I want to Work with Mery",
+    "want_mery_member":"I want to be a Member of Mery",
+    "start_you": "Start your free search for Mery in your area.",
+    "with_mery": " I want to Work with Mery",
+    "see_all":"see all",
+    "logout": "logout",
+    "home": "Home",
+    "years": "years old",
+    "continue" : "Continue",
+    "send": "Send",
+    "back": "Back",
+    "address": "address",
+    "section": {
+        "title": "What kind of service do you offer?"
+    },
+
+    "nav": {
+        "home": "Home",
+        "need_mery": "Find Mery",
+        "about": "About Mery",
+        "contact": "Contact Mery",
+        "become": "Become Mery",
+        "become_agency": "Become Agent"
+    },
+
+    "register": {
+        "title": "Sign up",
+        "helper": "Helper",
+        "employer": "Employer",
+        "agency": "Agency"
+    },
+    "login": {
+        "title": "Log In",
+        "welcome": "讓我們開始吧。 選擇一個選項",
+        "social": "login with",
+        "remember": "Remember me",
+        "or": "Or"
+    },
+    "about": {
+        "title": "About mery"
+    },
+    "term": {
+        "title": "Terms condition"
+    },
+    "privacy": {
+        "title": "Privacy policy"
+    },
+    "profile": {
+        "title": "Profile Mery",
+        "modal_title": " Pink collar workers for social network",
+        "complete": "Profile Completed",
+        "notComplete": "Fill data to complete your profile",
+        "photo": "change photo",
+        "buttonChange": "change photo",
+        "info": "Information",
+        "name": "Name",
+        "date_birth": "Date of birth",
+        "passport": "Passport No.",
+        "height": "Height",
+        "weight": "Weight",
+        "marital": "Marital",
+        "gender": "Gender",
+        "male": "Male",
+        "female": "Female",
+        "contract": "Contract Type",
+        "mobile": "Mobile",
+        "expected": "Expected Salary",
+        "arabic": "Arabic Language",
+        "english": "English Language",
+        "china": "Mandarin Language",
+        "whatsapp": "Whats Number",
+        "fb": "FaceBook Url",
+        "yt": "Youtube Url",
+        "rel": "Religion",
+        "eud": "Educations",
+        "type": "Job Type",
+        "profile": "No of Child",
+        "exp_passport": "Exp Passport",
+        "issue_passport": "Issue Passport",
+        "valid_visa": "Valid Visa",
+        "available": "Available At",
+        "exp": "How Many Years Of Experience",
+        "work_in": "Have you ever worked in?",
+        "current": "Current Country",
+        "nation": "Nationality",
+        "place_birth": "Place of Birth",
+        "bio": "Bio",
+        "brand": "Brand",
+        "refer": "Referral to a Friend",
+        "sub_refer": "Referral to a Friend",
+        "refer_content": " you can use this link to share your profile with other people and we will make Campaign for famous Mery",
+        "send": "send link to your friend",
+        "referal": "Referal",
+        "copy": "Copy Link",
+        "job": "jobs List",
+        "emp_name": "Employer Name",
+        "emp_email": "Employer Email",
+        "emp_phone": "Employer Phone Number",
+        "status": "Job Status",
+        "view": "View",
+        "title_job": "Title and type of job",
+        "wanted": "Wanted At for Work",
+        "gender_worker": "Worker Gender",
+        "order": "Order Status",
+        "hire": "Hire Me",
+        "very_passport": "Verification Passport",
+        "saudi": " Saudi Arabia"
+    },
+    "track": {
+        "title": "Tracking job",
+        "sub": "Tracking Job for:"
+    },
+    "need_mery": {
+        "title": "when do you need a mery?",
+        "contract": "Full Time",
+        "soon": "Soon",
+        "sub": "Your perfect Mery is waiting.",
+        "sub_bottom": "Just a few quick questions to match the best available housekeepers to your needs.",
+        "sub_bottom_again": "Tell us what your Mery should know about your home.",
+        "size": "Your house size",
+        "meters": "meters",
+        "bedroom": "How many bedrooms",
+        "child": "Child number",
+        "task": "What tasks do you expect your mery to complete?",
+        "wanted": "Want at :",
+        "type": "Job Type:",
+        "salary": "Salary : ",
+        "sub_title": "What tasks do you expect your mery to complete?"
+    },
+    "job": {
+        "title": "Job Posts",
+        "country": "Country posted Job",
+        "employer": "Employer Name",
+        "month": "per Month",
+        "skills": "Skill for Job",
+        "contract": " Contract is",
+        "place_as": "and Place as",
+        "from": "from"
+    },
+    "details": {
+        "title": "Job details",
+        "sub": "Description of Job",
+        "type": "Job Type",
+        "place": "Place Size",
+        "place_type": "Place type",
+        "bedroom": "Bed Rooms",
+        "wanted": "Wanted at",
+        "child": "Child No.",
+        "salary": "Salary",
+        "month": "Month",
+        "created": "Crated by",
+        "name": "Worker Name",
+        "gender": "Gender",
+        "expected": "Expected salary",
+        "code": "Code No.",
+        "apply": "Apply Job"
+
+    },
+    "chat": {
+        "title": "Messages",
+        "threads": " message threads",
+        "start": "start new chat",
+        "time": "20s ago"
+    },
+
+    "footer": {
+        "logo": "mery.com",
+        "get_help": "Get Help",
+        "discover": "Discover",
+        "home_play": "HomePay℠ - nanny tax help",
+        "list_your": "List your business",
+        "care": "Care directory",
+        "copy": "- All RIGHTS FOR MERY SOCIAL NETWORK FOR PINK COLOR PLATFORM"
+    },
+    "header": {
+        "title": "About"
+    },
+
+    "notify": {
+        "title": "Notification",
+        "sub": "Job Activities",
+        "hire": "hire in",
+        "as": " - hire as"
+
+    },
+    "app":{
+        "title": "Pink collar workers for social network",
+        "lang": "Language"
+    },
+    "forget": {
+        "title": "Forgot your password",
+        "sub": "Enter the Code used to create the account",
+        "sub_bottom": "we will send new password to your phone No.",
+        "phone": "Enter the Phone No . used to create the account",
+        "send": "we will send new password to Phone",
+        "sub_enter": "Enter the Valid password to use  account"
+    },
+    "other": {
+        "title": "About"
+    },
+    "support": {
+        "title": "Support"
+    },
+    "static": {
+        "about":"<p class=\"p1\"><span class=\"s1\"><strong>Tungkol sa Mery</strong></span></p>\n<p class=\"p1\"><span class=\"s1\">\n    <br>&nbsp;Sa loob ng maraming taon, ang amo at Kasambahay ay nalantad sa kakulangan ng linaw sa trabaho, kawalang-kakayahan, kaalaman at tiwala sa isa’t-isa.\n  </span></p>\n<p class=\"p1\"><span class=\"s1\">\n    <br>&nbsp;Noong 2019, ang Mery ang kauna-unahang bagong kompanya sa Gitnang Silangan na pinagsama-sama ang mga amo at kasambahay sa pamamagitan ng isang matalinong pansosyal na elektronikong platform para tumulong sa pagbuo ng may linaw at pagganyak na kalagayan ng pangangalap.\n  </span></p>\n<p class=\"p1\"><span class=\"s1\">\n    <br>&nbsp;Sa pamamagitan ng platform ng Mery, tinutulungan namin ang mga amo at kasambahay na suriin ang kani-kanilang mga profile at makipag-chat sa isa’t-isa para magkaroon ng tiwala at malaman ang higit pa bago sumang-ayon na simulan ang pagkuha sa pamamagitan ng mga akreditadong ahente ng pangangalap. Tumutulong ang Mery sa pagpapalawig ng kamalayan sa kultura ng mga amo at Kasambahay sa pamamagitan ng mga programang pang-edukasyon, pangkamalayan at pangganyak para madagdagan ang antas ng katatagan ng karera.\n  </span></p>\n<p class=\"p2\">\n  <br>\n</p>\n<p class=\"p1\"><span class=\"s1\"><strong>Ang aming trabaho</strong></span></p>\n<p class=\"p1\"><span class=\"s1\">\n    <br>&nbsp;Bilang amo maaari kang magparehistro at mag-browse ng libu-libong profile ng mga Kasambahay, at hanapin ang tamang katulong para sa iyong mga pangangailangan sa bahay at suriin ang pagtatasa at magkaroon ng kumpiyansa sa Kasambahay bago simulan ang proseso ng pangangalap.\n  </span></p>\n<p class=\"p1\"><span class=\"s1\">\n    <br>&nbsp;Bilang kasambahay, maaari kang magparehistro at suriin ang profile ng mga amo at simulan ang pakikipag-chat sa kanila para makatagpo ng pamilya na nababagay sa iyong mga adhikain at kagustuhan at makakuha ng trabaho nang libre.\n  </span></p>",
+        "terms":"<p class=\"p1\"><span class=\"s1\"><strong>Mga Tuntunin at Kondisyon para sa Mery.com</strong></span></p>\n<p class=\"p2\"><span class=\"s1\"><strong>Introduksyon</strong></span></p>\n<p class=\"p3\"><span class=\"s1\">Ang Mga Tuntuning ito ay ganap na ipatutupad at makakaapekto sa iyong paggamit ng Website na ito. Sa pamamagitan ng paggamit ng mery.com, sumang-ayon kang tanggapin ang lahat ng tuntunin at kondisyong nakasulat dito. Hindi mo dapat gamitin ang mery.com kung hindi ka sumasang-ayon sa alinman sa mga Tuntunin at Kondisyong ito.</span></p>\n<p class=\"p3\"><span class=\"s1\">Ang mga menor-de-edad o mga taong wala pang 18 taong gulang ay hindi pinahihintulutang gumamit ng Website na ito.</span></p>\n<p class=\"p2\"><span class=\"s1\"><strong>Mga Karapatan sa Intelektwal na Pagmamay-ari</strong></span></p>\n<p class=\"p3\"><span class=\"s1\">Maliban sa content na pinagmamay-arian mo, sa ilalim ng mga Tuntuning ito, pinagmamay-arian ng Mery.com&nbsp;at/o ng mga tagalisensya nito ang lahat ng karapatan sa intelektwal na pagmamay-ari at materyales na nilalaman ng Website na ito.</span></p>\n<p class=\"p3\"><span class=\"s1\">Pinagkakalooban ka ng limitadong lisensya para lamang sa mga layunin ng pagtingin sa materyal na nilalaman ng Website na ito.</span></p>\n<p class=\"p2\"><span class=\"s1\"><strong>Mga Pagbabawal</strong></span></p>\n<p class=\"p3\"><span class=\"s1\">Partikular kang pinagbabawalang gawin ang lahat ng sumusunod:</span></p>\n<ul class=\"ul1\">\n  <li class=\"li4\"><span class=\"s3\">Pagpapaskil ng anumang materyales ng Website sa anumang iba pang media;</span></li>\n  <li class=\"li4\"><span class=\"s3\">pagbebenta, pagbibigay ng lisensya at/o sa ibang paraan ay pagkokomersyalisa ng anumang materyal ng Website;</span></li>\n  <li class=\"li4\"><span class=\"s3\">pagganap at/o pagpapakita sa publiko ng anumang materyal ng Website;</span></li>\n  <li class=\"li4\"><span class=\"s3\">paggamit sa Wesbsite na ito sa anumang paraan na o maaaring makasisira sa Website na ito;</span></li>\n  <li class=\"li4\"><span class=\"s3\">paggamit sa Website na ito sa anumang paraan na nakakaapekto sa akses ng user sa Website na ito;</span></li>\n  <li class=\"li4\"><span class=\"s3\">paggamit sa Website na ito nang labag sa mga naaangkop na batas at regulasyon, o sa anumang paraan na maaaring magdulot ng pinsala sa Website, o sa sinumang tao o entidad ng negosyo;</span></li>\n  <li class=\"li4\"><span class=\"s3\">pakikisangkot sa anumang pagmimina ng datos, pag-aani ng datos, pagkuha ng datos o anumang iba pang kahalintulad ng aktibidad kaugnay ng Website na ito;</span></li>\n  <li class=\"li5\"><span class=\"s3\">Paggamit sa Website na ito upang makisangkot sa anumang pagpapatalastas o pagbebenta.</span></li>\n</ul>\n<p class=\"p3\"><span class=\"s1\">Ang ilang bahagi ng Website na ito ay ipinagbabawal na maakses mo at maaaring ipagbawal pa ng Mery.com ang pag-akses mo sa anumang bahagi ng Website na ito, anumang oras, sa sarili nitong pagpapasya. Anumang user ID at password na maaaring mayroon ka para sa Website na ito ay kompidensyal at dapat mo ring panatilihin ang kompidensyalidad.</span></p>\n<p class=\"p2\"><span class=\"s1\"><strong>Ang Iyong Content</strong></span></p>\n<p class=\"p3\"><span class=\"s1\">Sa mga Batayang Tuntunin at Kondisyon ng Website na ito, ang “Iyong Content” ay mangangahulugang anumang audio, teksto ng video, mga imahe o iba pang materyales na pipiliin mong ipakita sa Website na ito. Sa pamamagitan ng pagpapakita ng Iyong Content, pinagkakalooban mo ang Mery.com&nbsp;ng hindi eksklusibo, pandaigdigan at hindi mababasing sublisensya para gamitin, i-angkop, ilathala, isalin at ipamahagi ito sa anuman at lahat ng media.</span></p>\n<p class=\"p3\"><span class=\"s1\">Ang Iyong Content ay dapat sa iyo at hindi lumalabag sa mga karapatan ng anumang ikatlong partido. Inilalaan ng Mery.com&nbsp;ang karapatang alisin ang alinman sa Iyong Content mula sa Website na ito anumang oras nang walang abiso.</span></p>\n<p class=\"p2\"><span class=\"s1\"><strong>Walang garantiya</strong></span></p>\n<p class=\"p3\"><span class=\"s1\">Ang Website na ito ay ibinibigay sa kasalukuyan nitong anyo, kasama ang lahat ng depekto, walang ipinahahayag ang Mery.com na anumang uri ng pagkakatawan o garantiya na may kaugnayan sa Website na ito o sa materyales na nilalaman ng Website na ito. Gayundin, walang anumang nilalaman ng Website na ito ang maaaring ipagpakahulugan bilang nagpapayo sa iyo.</span></p>\n<p class=\"p2\"><span class=\"s1\"><strong>Limitasyon ng kakayahan</strong></span></p>\n<p class=\"p3\"><span class=\"s1\">Hindi pananagutin ang Mery.com, o sinuman sa mga opisyal, direktor, at empleyado nito para sa anumang bagay na lumilitaw mula sa o sa anumang paraan na konektado sa iyong paggamit ng Website na ito, nakakontrata man ang naturang pananagutan. &nbsp;Hindi pananagutin ang Mery.com, kabilang ang mga opisyal, direktor, at empleyado nito para sa anumang hindi direkta, nagkataon, o espesyal na pananagutang lumilitaw mula sa o sa anumang paraan na may kaugnayan sa iyong paggamit ng Website na ito.</span></p>\n<p class=\"p2\"><span class=\"s1\"><strong>Proteksyon</strong></span></p>\n<p class=\"p3\"><span class=\"s1\">Pinoprotektahan mo sa pamamagitan nito, sa ganap na saklaw, ang Mery.com mula at laban sa anuman at/o lahat ng pananagutan, singil, pangangailangan, mga sanhi ng aksyon, pinsala at mga gastusin na lumilitaw sa anumang paraang may kaugnayan sa iyong paglabag sa alinman sa mga probisyon ng Mga Tuntuning ito.</span></p>\n<p class=\"p2\"><span class=\"s1\"><strong>Pagiging Mahihiwalay</strong></span></p>\n<p class=\"p3\"><span class=\"s1\">Kapag alinmang probisyon ng mga Tuntuning ito ay napag-alamang hindi balido sa ilalim ng naaangkop na batas, ang mga naturang probisyon ay buburahin nang hindi naaapektuhan ang mga natitirang probisyon dito.</span></p>\n<p class=\"p2\"><span class=\"s1\"><strong>Pag-iiba-iba ng Mga Tuntunin</strong></span></p>\n<p class=\"p3\"><span class=\"s1\">Pinahihintulutan ang Mery.com&nbsp;na baguhin ang mga Tuntuning ito anumang oras na sa palagay nito ay naaangkop, at sa pamamagitan ng paggamit sa Website na ito, inaasahan kang regular na balikan at aralin ang mga Tuntuning ito.</span></p>\n<p class=\"p2\"><span class=\"s1\"><strong>Pagtatalaga</strong></span></p>\n<p class=\"p3\"><span class=\"s1\">Pinahihintulutan ang Mery.com&nbsp;na italaga, ilipat, at ikontrata sa iba ang mga karapatan at/o pananagutan nito sa ilalim ng mga Tuntuning ito nang walang anumang abiso. Gayunman, hindi ka pinahihintulutang italaga, ilipat, o ikontrata sa iba ang alinman sa iyong mga karapatan at/o obligasyon sa ilalim ng mga Tuntuning ito.</span></p>\n<p class=\"p2\"><span class=\"s1\"><strong>Buong Kasunduan</strong></span></p>\n<p class=\"p3\"><span class=\"s1\">Ang mga Tuntuning ito ay binubuo ng kabuuang kasunduan sa pagitan ng Mery.com&nbsp;at ikaw kaugnay ng iyong paggamit ng Website na ito, at nilalampasan nito ang lahat ng naunang kasunduan at unawaan.</span></p>\n<p class=\"p2\"><span class=\"s1\"><strong>Namamahalang Batas at Hurisdiksyon</strong></span></p>\n<p class=\"p3\"><span class=\"s1\">Ang mga Tuntuning ito ay pamamahalaan ng at bibigyang kahulugan alinsunod sa mga batas ng Estado ng Bansa, at nagpapailalim ka sa hindi eksklusibong hurisdiksyon ng mga pang-estado at pederal na korte na matatagpuan sa Bansa para sa paglulutas ng anumang tunggalian.</span></p>",
+        "privacy":"<p class=\"p1\"><span class=\"s1\"><strong>Patakaran sa Pribasya:</strong></span></p>\n<p class=\"p2\">\n  <br>\n</p>\n<p class=\"p1\"><span class=\"s2\">- Ang Mery (\"kami\", \"amin\", o \"namin\") ang nagpapatakbo sa website na www.mery.com website (ang \"Serbisyo\").</span></p>\n<p class=\"p2\">\n  <br>\n</p>\n<p class=\"p1\"><span class=\"s2\">- Ipinaaalam ng page na ito sa iyo ang aming mga patakaran may kaugnayan sa koleksyon, paggamit, at pagsisiwalat ng iyong personal na datos kapag ginagamit mo ang Serbisyo at ang mga pinili mo na nakaugnay sa datos na iyon.</span></p>\n<p class=\"p2\">\n  <br>\n</p>\n<p class=\"p1\"><span class=\"s2\">-Ginagamit namin ang iyong datos upang ilaan at mapasulong ang Serbisyo. Sa pamamagitan ng paggamit ng Serbisyo, sumasang-ayon ka sa koleksyon at paggamit ng iyong impormasyon kaayon sa patakarang ito. Malibang tukuyin sa Patakaran sa Pribasya na ito, ang mga terminong ginamit sa Patakaran sa Pribasya na ito ay may parehong kahulugan sa aming Mga Tuntunin at Kondisyon, na maa-access mula sa<span class=\"Apple-converted-space\">&nbsp;&nbsp;</span>\n    <a href=\"http://www.mery.com\"><span class=\"s3\">www.mery.com</span></a>.\n  </span></p>\n<p class=\"p2\">\n  <br>\n</p>\n<p class=\"p2\">\n  <br>\n</p>\n<p class=\"p1\"><span class=\"s2\"><strong>Pagkolekta at Paggamit ng Impormasyon:</strong></span></p>\n<p class=\"p2\">\n  <br>\n</p>\n<p class=\"p1\"><span class=\"s2\">-Nangongolekta kami ng iba’t-ibang uri ng impormasyon para sa iba’t-ibang layunin upang ilaan at mapasulong ang aming Serbisyo sa iyo.</span></p>\n<p class=\"p2\">\n  <br>\n</p>\n<p class=\"p1\"><span class=\"s2\"><strong>Mga Uri ng Datos na Kinokolekta</strong></span></p>\n<p class=\"p2\">\n  <br>\n</p>\n<p class=\"p1\"><span class=\"s2\"><strong>Personal na Datos</strong></span></p>\n<p class=\"p2\">\n  <br>\n</p>\n<p class=\"p1\"><span class=\"s2\">-Habang ginagamit ang aming Serbisyo, maaari ka naming hilingan na paglaanan kami ng partikular na personal na impormasyong pagkakakilanlan na magagamit upang makipag-ugnayan sa iyo o kilalanin ka (“Personal na Datos”). Ang personal na<span class=\"Apple-converted-space\">&nbsp;&nbsp;</span>impormasyong pagkakakilanlan ay maaaring kinabibilangan ng subalit hindi limitado sa:</span></p>\n<ul class=\"ul1\">\n  <li class=\"li3\"><span class=\"s2\">Email address</span></li>\n  <li class=\"li3\"><span class=\"s2\">Unang pangalan at apelyido</span></li>\n  <li class=\"li3\"><span class=\"s2\">Numero sa telepono</span></li>\n  <li class=\"li3\"><span class=\"s2\">Address, Estado, Probinsya, ZIP/Postal code, Lunsod</span></li>\n  <li class=\"li1\"><span class=\"s2\">Cookies at Datos sa Paggamit</span></li>\n</ul>\n<p class=\"p2\">\n  <br>\n</p>\n<p class=\"p1\"><span class=\"s2\"><strong>Datos sa Paggamit</strong></span></p>\n<p class=\"p1\"><span class=\"s2\">- Maaari din kaming mangolekta ng impormasyon kung paano na-access at ginamit (“Datos sa Paggamit”) ang Serbisyo. Ang Datos sa Paggamit na ito ay maaaring kinabibilangan ng impormasyon tulad ng Internet Protocol address (hal. IP address) ng iyong computer, uri ng browser, bersiyon ng browser, ang mga page ng aming Serbisyo na binisita mo, ang oras at petsa ng iyong pagbisita, ang oras na ginugol mo sa mga page na iyon, natatanging tagatukoy ng device at iba pang diyagnostikong datos.</span></p>\n<p class=\"p1\"><span class=\"s2\">Pagsubaybay at Datos ng Cookies</span></p>\n<p class=\"p1\"><span class=\"s2\">- Gumagamit kami ng cookies at iba pang katulad na teknolohiya sa pagsubaybay upang subaybayan ang aktibidad sa aming Serbisyo at panatilihin ang partikular na impormasyon.</span></p>\n<p class=\"p1\"><span class=\"s2\">- Ang cookies ay file na may kaunting datos na maaaring kinabibilangan ng di-kilalang natatanging tagatukoy. Ang cookies ay ipinapadala sa iyong browser mula sa isang website at iniimbak sa iyong device. Ang mga teknolohiya sa pagsubaybay na ginagamit din namin ay ang beacons, tags, at scripts upang mangolekta at subaybayan ang impormasyon at upang mapabuti at masuri ang aming Serbisyo.</span></p>\n<p class=\"p1\"><span class=\"s2\">-Maaari mong bigyang-instruksyon ang iyong browser na tanggihan ang lahat ng cookies o ipahiwatig kapag may ipinapadalang cookie. Gayunman, kung hindi mo tatanggapin ang cookies, maaaring hindi mo magamit ang ilang bahagi ng aming Serbisyo.</span></p>\n<p class=\"p1\"><span class=\"s2\"><strong>-Mga Halimbawa ng Cookies na ginagamit namin:</strong></span></p>\n<p class=\"p1\"><span class=\"s2\"><span class=\"Apple-converted-space\">&nbsp;</span>- Gumagamit kami ng Session Cookies upang paganahin ang aming Serbisyo.</span></p>\n<p class=\"p1\"><span class=\"s2\"><span class=\"Apple-converted-space\">&nbsp;</span>- Gumagamit kami ng Preference Cookies upang tandaan ang iyong mga kagustuhan at iba’t-ibang setting.</span></p>\n<p class=\"p1\"><span class=\"s2\"><span class=\"Apple-converted-space\">&nbsp;&nbsp;</span>- Gumagamit kami ng Security Cookies para sa mga layuning pang-seguridad.</span></p>\n<p class=\"p2\">\n  <br>\n</p>\n<p class=\"p1\"><span class=\"s2\"><strong>Gamit ng Datos</strong></span></p>\n<p class=\"p2\"><span class=\"s2\"><span class=\"Apple-converted-space\">&nbsp; &nbsp;&nbsp;</span></span></p>\n<p class=\"p1\"><span class=\"s2\">- Ginagamit ng Mery ang nakolektang datos para sa iba’t-ibang layunin:</span></p>\n<ul class=\"ul1\">\n  <li class=\"li3\"><span class=\"s2\">Upang makapaglaan at mapanatili ang Serbisyo.</span></li>\n  <li class=\"li3\"><span class=\"s2\">Upang abisuhan ka tungkol sa mga pagbabago sa aming Serbisyo</span></li>\n  <li class=\"li3\"><span class=\"s2\">Upang pahintulutan kang makasali sa interaktibong mga tampok ng aming Serbisyo kapag pinipili mong sumali.</span></li>\n  <li class=\"li3\"><span class=\"s2\">Upang maglaan ng pangangalaga at suporta sa kostumer.</span></li>\n  <li class=\"li3\"><span class=\"s2\">Upang maglaan ng pagsusuri o mahalagang impormasyon nang sa gayon ay mapabuti ang Serbisyo.</span></li>\n  <li class=\"li3\"><span class=\"s2\">Upang subaybayan ang paggamit sa Serbisyo.</span></li>\n  <li class=\"li1\"><span class=\"s2\">Upang matukoy, mahadlangan at tugunan ang teknikal na mga isyu.</span></li>\n</ul>\n<p class=\"p2\">\n  <br>\n</p>\n<p class=\"p1\"><span class=\"s2\"><strong>Paglilipat ng Datos</strong></span></p>\n<p class=\"p1\"><span class=\"s2\">-Ang iyong impormasyon, kabilang ang iyong Personal na Datos, ay maaaring ilipat sa — at panatilihin sa — mga computer na nasa labas ng iyong estado, probinsya, bansa o iba pang nasasakupan ng pamahalaan kung saan ang mga batas sa pagprotekta ng datos ay maaaring iba mula sa iyong hurisdiksyon.</span></p>\n<p class=\"p1\"><span class=\"s2\">-Kung ikaw ay nasa labas ng United Arab Emirates at pinili mong magbigay ng impormasyon sa amin, mangyaring pansinin na naglilipat kami ng datos, kabilang ang Personal na Datos, sa United Arab Emirates at pinoproseso namin iyon doon.</span></p>\n<p class=\"p1\"><span class=\"s2\">-Ang iyong pahintulot sa Patakaran sa Pribasya na ito kasunod ng iyong pagsumite ng gayong impormasyon ay nagpapahiwatig ng iyong pagsang-ayon sa paglilipat na iyon.</span></p>\n<p class=\"p1\"><span class=\"s2\">-Isasagawa ng Mery ang lahat ng makatuwirang kinakailangan upang tiyakin na ang iyong datos ay pinakikitunguhan nang may pag-iingat at kaayon sa Patakaran sa Pribasya na ito at walang magaganap na paglilipat ng iyong Personal na Datos patungo sa isang organisasyon o bansa malibang may sapat na kontrol na naroon kabilang ang pagseguro sa iyong datos at iba pang personal na impormasyon.</span></p>\n<p class=\"p2\">\n  <br>\n</p>\n<p class=\"p1\"><span class=\"s2\"><strong>Pagsisiwalat ng Datos</strong></span></p>\n<p class=\"p2\">\n  <br>\n</p>\n<p class=\"p1\"><span class=\"s2\">Legal na Mga Pangangailangan</span></p>\n<p class=\"p1\"><span class=\"s2\">-Maaaring isiwalat ng Mery ang iyong Personal na Datos sa pagtitiwalang ang gayong aksyon ay kinakailangan upang:</span></p>\n<ul class=\"ul1\">\n  <li class=\"li3\"><span class=\"s2\">Upang sumunod sa legal na pananagutan.</span></li>\n  <li class=\"li3\"><span class=\"s2\">Upang ingatan at depensahan ang mga karapatan o pag-aari ng Mery.</span></li>\n  <li class=\"li3\"><span class=\"s2\">Upang hadlangan o imbestigahan ang posibleng maling gawaing may kaugnayan sa Serbisyo.</span></li>\n  <li class=\"li3\"><span class=\"s2\">Upang ingatan ang personal na kaligtasan ng mga gumagamit ng Serbisyo o ng publiko.</span></li>\n  <li class=\"li1\"><span class=\"s2\">Upang mag-ingat laban sa legal na pananagutan.</span></li>\n</ul>\n<p class=\"p2\">\n  <br>\n</p>\n<p class=\"p1\"><span class=\"s2\"><strong>Seguridad ng Datos</strong></span></p>\n<p class=\"p1\"><span class=\"s2\">-Ang seguridad ng iyong datos ay mahalaga sa amin, subalit tandaan na walang paraan ng paglilipat sa Internet, o paraan ng elektronikong pag-iimbak ang ligtas nang 100%. Bagaman pinagsisikapan naming gumamit ng paraang komersiyal na katanggap-tanggap , hindi namin magagarantiyahan ang lubusang seguridad nito.</span></p>\n<p class=\"p2\">\n  <br>\n</p>\n<p class=\"p1\"><span class=\"s2\"><strong>Tagapaglaan ng Serbisyo</strong></span></p>\n<p class=\"p1\"><span class=\"s2\">-Maari kaming mag-empleyo ng ikatlong partidong mga kompanya at indibidwal upang mapabilis ang aming Serbisyo (\"Tagapaglaan ng Serbisyo\"), upang maglaan ng Serbisyo para sa amin, upang magsagawa ng mga serbisyong kaugnay ng Serbisyo o upang tulungan kami sa pagsusuri kung paano ginagamit ang aming Serbisyo.</span></p>\n<p class=\"p1\"><span class=\"s2\">-Ang ikatlong mga partidong ito ay mayroong access sa iyong Personal na Datos tangi lamang upang maisagawa ang mga gawaing ito para sa amin at obligado silang hindi isiwalat o gamitin ito para sa anumang ibang layunin.</span></p>\n<p class=\"p2\">\n  <br>\n</p>\n<p class=\"p1\"><span class=\"s2\"><strong>Mga Pagsusuri</strong></span></p>\n<p class=\"p1\"><span class=\"s2\">-Maaari kaming gumamit ng ikatlong-partidong Mga Tagapaglaan ng Serbisyo upang subaybayan at suriin ang paggamit sa aming Serbisyo.</span></p>\n<p class=\"p1\"><span class=\"s2\">- Ang Google analytics ay isang serbisyong web analytics. Maaari mong bisitahin ang page ng kanilang Patakaran sa Pribasya dito: https://policies.google.com/privacy\"&gt;</span></p>\n<p class=\"p2\">\n  <br>\n</p>\n<p class=\"p1\"><span class=\"s2\"><strong>Mga Link sa Ibang Site</strong></span></p>\n<p class=\"p1\"><span class=\"s2\">-Maaaring maglaman ang aming Serbisyo ng mga link sa ibang site na hindi kami ang nagpapatakbo. Kapag nag-click ka ng link ng ikatlong partido, dadalhin ka sa site ng ikatlong partido na iyon. Mariin naming iminumungkahi na suriin mo ang Patakaran sa Pribasya ng bawat site na binibisita mo.</span></p>\n<p class=\"p1\"><span class=\"s2\">-Wala kaming kontrol sa at hindi namin aakuin ang responsibilidad para sa nilalaman, mga patakaran sa pribasya o gawain ng anumang site ng ikatlong partido o mga serbisyo.</span></p>\n<p class=\"p2\">\n  <br>\n</p>\n<p class=\"p2\">\n  <br>\n</p>\n<p class=\"p1\"><span class=\"s2\"><strong>Pribasya ng Mga Bata</strong></span></p>\n<p class=\"p1\"><span class=\"s2\">-Hindi tumutugon ang aming Serbisyo sa sinuman na wala pang 18 ang edad. (\"Mga Bata\").</span></p>\n<p class=\"p1\"><span class=\"s2\">-Hindi namin sinasadyang kolektahin ang impormasyon ng personal na pagkakakilanlan mula sa sinuman na wala pang 18 ang edad. Kung ikaw ay isang magulang o tumatayong magulang at napag-alaman mo na ang iyong Mga Bata ay nagbigay sa amin ng Personal na Datos, mangyaring makipag-ugnayan sa amin. Kung mabatid namin na nakakolekta kami ng Personal na Datos mula sa mga bata nang walang beripikasyon ng pahintulot ng magulang, magsasagawa kami ng mga hakbang upang tanggalin ang impormasyon na iyon mula sa aming mga server.</span></p>\n<p class=\"p2\">\n  <br>\n</p>\n<p class=\"p1\"><span class=\"s2\"><strong>Mga Pagbabago sa Patakaran Sa Pribasya Na Ito.</strong></span></p>\n<p class=\"p1\"><span class=\"s2\">-Maaari naming baguhin ang aming Patakaran sa pribasya sa pana-panahon. Aabisuhan ka namin sa pamamagitan ng paglalagay ng bagong Patakaran sa Pribasya sa page na ito.</span></p>\n<p class=\"p1\"><span class=\"s2\">-Ipapaalam namin sa iyo sa pamamagitan ng email at/o prominenteng abiso sa aming Serbisyo, bago maging epektibo ang pagbabago at ia-update ang “petsa ng pagiging epektibo’ sa itaas ng Patakaran sa Pribasya na ito.</span></p>\n<p class=\"p1\"><span class=\"s2\">-Ipinapayo sa iyong suriin mo ang Patakaran sa pribasya na ito paminsan-minsan para sa anumang mga pagbabago. Ang mga pagbabago sa Patakaran sa Pribasya na ito ay epektibo kapag nailagay na sa page na ito.</span></p>\n<p class=\"p2\">\n  <br>\n</p>\n<p class=\"p2\">\n  <br>\n</p>\n<p class=\"p1\"><span class=\"s2\"><span class=\"Apple-converted-space\">&nbsp;</span>Makipag-ugnayan Sa Amin</span></p>\n<p class=\"p1\"><span class=\"s2\">-Kung may mga katanungan ka tungkol sa Patakaran sa Pribasya, mangyaring makipag-ugnayan sa amin:</span></p>\n<p class=\"p1\"><span class=\"s2\">Sa pamamagitan ng email: <strong>info@mery.com</strong></span></p>\n<p class=\"p2\"><span class=\"s2\"><span class=\"Apple-converted-space\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></span></p>"
+    }
+}
