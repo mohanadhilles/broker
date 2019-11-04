@@ -61,6 +61,8 @@ Route::middleware('auth:api')->group(function () {
 
 
 Route::prefix('worker')->group(function () {
+    Route::get('out', 'Worker\WorkerController@outWorker')->name('worker');
+
     Route::get('/', 'Worker\WorkerController@getWorker')->name('worker');
     Route::get('count', 'Worker\WorkerController@getCount')->name('getCount');
     Route::get('prefer/{id}', 'Worker\WorkerController@preferToFriend')->name('preferToFriend');

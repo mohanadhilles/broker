@@ -188,17 +188,17 @@ class UsersTableSeeder extends Seeder
             }
 
             $countries = [
-                ['id' => 1, 'title' => 'No Selected','code'=> 'no'],
+                ['id' => 1, 'title' => 'No Selected','code'=> '+'],
                 ['id' => 2, 'title' => 'Saudi Arabia', 'code' => '+966'],
                 ['id' => 3, 'title' => 'United Arab Emirates', 'code' => '+971'],
                 ['id' => 4, 'title' => 'lebanon', 'code' => '+371'],
                 ['id' => 5, 'title' => 'Bahrain', 'code' => '+973'],
                 ['id' => 6, 'title' => 'Oman', 'code' => '+968'],
-                ['id' => 7, 'title' => 'Qatar', 'code' => '+1787'],
+                ['id' => 7, 'title' => 'indonesia', 'code' => '+62'],
                 ['id' => 8, 'title' => 'Philippines', 'code' => '+63'],
                 ['id' => 9, 'title' => 'Taiwan', 'code' => '+886'],
-                ['id' => 10, 'title' => 'China', 'code' => '+86'],
-                ['id' => 11, 'title' => 'indonesia', 'code' => '+62'],
+                ['id' => 10,'title' => 'China', 'code' => '+86'],
+                ['id' => 11,'title' => 'Qatar', 'code' => '+1787'],
             ];
 
             foreach ($countries as $item) {
@@ -207,7 +207,7 @@ class UsersTableSeeder extends Seeder
 
 
 
-            factory(\App\User::class, 243)->create();
+//            factory(\App\User::class, 243)->create();
 
             $follow = [
 
@@ -235,7 +235,6 @@ class UsersTableSeeder extends Seeder
 
             factory(\App\Entities\Skill::class, 100)->create();
             factory(\App\Entities\Setting::class, 100)->create();
-
 
         }
     }

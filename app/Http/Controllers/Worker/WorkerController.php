@@ -204,9 +204,23 @@ class WorkerController extends BaseController
     }
     public function getWorker()
     {
-        $worker = User::where('role', 2)->with('nationality')->with('ratings')
+        $worker = User::orWhere('role', 4)->orWhere('role',2)->with('nationality')->with('ratings')
             ->with('countries')->with('place_of_birth')->with('english_lang')->with('arabic_lang')
             ->with('mandarin_lang')->with('currency')->with('education')->with('completion')->with('religion')->with('job_type')->with('skills')->paginate(8);
+
+        if (!($worker)) {
+
+            return $this->sendError(' not found ! ');
+        }
+//        hello
+
+        return $this->sendResponse($worker, ' read successfully');
+    }
+    public function outWorker()
+    {
+        $worker = User::where('role', 2)->with('nationality')->with('ratings')
+            ->with('countries')->with('place_of_birth')->with('english_lang')->with('arabic_lang')
+            ->with('mandarin_lang')->with('currency')->with('education')->with('completion')->with('religion')->with('job_type')->with('skills')->get();
 
         if (!($worker)) {
 

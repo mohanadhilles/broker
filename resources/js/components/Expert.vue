@@ -3,7 +3,7 @@
         <!--  Best mery section -->
         <section class="best-mery" id="best-mery">
             <div class="container">
-                <h2 class="mery-header">{{$t("helper")}}</h2>
+                <h2 class="mery-header">{{$t("expert")}}</h2>
                 <div class="line mx-auto"></div>
                 <div class="sliderSlider">
                     <section class="customer-logos slider mt-4" id="slick-slid">
@@ -35,7 +35,7 @@
     import axios from 'axios';
 
     export default {
-        name: 'Best',
+        name: 'Expert',
         components: { MeryItem },
         data() {
             return {
@@ -78,12 +78,12 @@
         },
         methods: {
             getMerys() {
-                axios.get('api/worker', {
+                axios.get('api/agency', {
                     headers: {
                         Authorization: 'Bearer ' + localStorage.getItem('token')
                     }
                 }).then(res => {
-                    this.merys = res.data.data.data;
+                    this.merys = res.data.data;
                 })
             },
             goToMery() {

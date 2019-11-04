@@ -76,7 +76,7 @@
                                                        class="form-check-input form-check-input--custom"
                                                        id="inlineRadio11" name="role" type="radio" value="2">
                                                 <span class="check"></span>
-                                                {{$t("register.helper")}} </label>
+                                                {{$t("helper")}} </label>
                                         </div>
                                         <div class="form-check form-check-inline">
                                             <label class="form-check-label check-wrapper" for="inlineRadio22">
@@ -84,7 +84,7 @@
                                                        id="inlineRadio22" v-model="role"
                                                        name="role" type="radio" value="3">
                                                 <span class="check"></span>
-                                                {{$t("register.employer")}}</label>
+                                                {{$t("employer")}}</label>
                                         </div>
                                         <div class="form-check form-check-inline">
                                             <label class="form-check-label check-wrapper" for="inlineRadio33">
@@ -92,7 +92,7 @@
                                                        id="inlineRadio33" v-model="role"
                                                        name="role" type="radio" value="4">
                                                 <span class="check"></span>
-                                                {{$t("register.agency")}}</label>
+                                                {{$t("expert")}}</label>
 
                                         </div>
                                         <div class="form-group form-group--custom" style="display: inline-flex;"
@@ -151,8 +151,8 @@
                                 <div
                                     class="col-lg-6 col-md-12 col-sm-12 d-flex align-items-center justify-content-center flex-column"
                                     style="line-height: 1.5;">
-                                    <h5 class="text-center p-2">{{$t("login.or")}}<br>{{$t("login.social")}}</h5>
-                                   <SocialAuth></SocialAuth>
+<!--                                    <h5 class="text-center p-2">{{$t("login.or")}}<br>{{$t("login.social")}}</h5>-->
+<!--                                   <SocialAuth></SocialAuth>-->
                                 </div>
                             </div>
                         </div>
@@ -163,7 +163,8 @@
         </header>
 
 
-        <Best/>
+        <best></best>
+        <expert></expert>
 
     </div>
 </template>
@@ -174,9 +175,11 @@
     import Header from '../../components/Header';
     import Best from '../../components/Best';
     import SocialAuth from "../../components/SocialAuth";
+    import Expert from "../../components/Expert";
+
     export default {
         name: 'Register',
-        components: {Header, Best,SocialAuth},
+        components: {Header, Best,SocialAuth,Expert},
 
         data: function() {
             return {

@@ -160,7 +160,7 @@
         margin: auto;
         display: block;
     }
-    @media (max-width: 400px) {
+    @media (max-width: 500px) {
         .progressbar li {
             width: 50% !important;
         }

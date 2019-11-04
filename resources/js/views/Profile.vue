@@ -287,102 +287,6 @@
                                                                 </div>
 
 
-                                                                <div class="form-group row"
-                                                                     :class="['form-group', allerros.height ? 'has-danger' : '']">
-                                                                    <label class="col-form-label">{{$t("profile.height")}}</label>
-                                                                    <div class="input-field">
-                                                                        <input class="form-control"
-                                                                               v-model="user.height"
-                                                                               :class="['form-control', allerros.height ? 'has-danger' : '']"
-                                                                               name="height" required
-                                                                               type="text">
-                                                                        <span v-if="allerros.height"
-                                                                              :class="['badge badge-danger']">@{{ allerros.height[0] }}</span>
-
-                                                                    </div>
-                                                                </div>
-
-                                                                <div class="form-group row"
-                                                                     :class="['form-group', allerros.weight ? 'has-danger' : '']">
-                                                                    <label class="col-form-label">{{$t("profile.weight")}}</label>
-                                                                    <div class="input-field">
-                                                                        <input class="form-control"
-                                                                               v-model="user.weight"
-                                                                               :class="['form-control', allerros.weight ? 'has-danger' : '']"
-                                                                               name="weight" required
-                                                                               type="text">
-                                                                        <span v-if="allerros.weight"
-                                                                              :class="['badge badge-danger']">@{{ allerros.weight[0] }}</span>
-                                                                    </div>
-                                                                </div>
-
-
-                                                                <div class="form-group form-select row">
-                                                                    <label class="col-form-label" for="Educations">{{$t("profile.marital")}}
-                                                                        Status </label>
-                                                                    <div class="input-field">
-                                                                        <select class="form-control" id="marital"
-                                                                                v-model="user.marital_status"
-                                                                                name="marital_status">
-                                                                            <option v-for="marital in marital_status"
-                                                                                    :value="marital">{{ marital }}
-                                                                            </option>
-                                                                        </select>
-                                                                    </div>
-                                                                </div>
-
-                                                                <div class="form-group row"
-                                                                     :class="['form-group', allerros.gender ? 'has-danger' : '']">
-                                                                    <label class=" col-form-label">{{$t("profile.gender")}}</label>
-                                                                    <div class="input-field">
-                                                                        <div class="row">
-                                                                            <div class="col-6 group1">
-                                                                                <div class="gender">
-                                                                                    <div
-                                                                                        class="form-check form-check-inline check-inline">
-                                                                                        <label
-                                                                                            class="form-check-label check-wrapper male-box">
-                                                                                            <input checked
-                                                                                                   v-model="user.gender"
-                                                                                                   class="form-check-input form-check-input--custom"
-                                                                                                   id="inlineRadio11"
-                                                                                                   name="gender"
-                                                                                                   :class="['form-control', allerros.gender ? 'has-danger' : '']"
-                                                                                                   type="radio"
-                                                                                                   value="0">
-                                                                                            <span class="check"></span>
-                                                                                            <span
-                                                                                                class="male">{{$t("profile.male")}}</span>
-                                                                                        </label>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="col-6 group2">
-                                                                                <div class="gender">
-                                                                                    <div
-                                                                                        class="form-check form-check-inline check-inline check-inline--2">
-                                                                                        <label
-                                                                                            class="form-check-label check-wrapper">
-                                                                                            <input
-                                                                                                class="form-check-input form-check-input--custom"
-                                                                                                id="inlineRadio22"
-                                                                                                v-model="user.gender"
-                                                                                                name="gender"
-                                                                                                type="radio"
-                                                                                                :class="['form-control', allerros.gender ? 'has-danger' : '']"
-                                                                                                value="1">
-                                                                                            <span class="check"></span>
-                                                                                            <span
-                                                                                                class="female">{{$t("profile.female")}}</span>
-                                                                                        </label>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <span v-if="allerros.gender"
-                                                                              :class="['badge badge-danger']">@{{ allerros.gender[0] }}</span>
-                                                                    </div>
-                                                                </div>
 
                                                                 <div class="form-group row"
                                                                      :class="['form-group', allerros.phone ? 'has-danger' : '']">
@@ -423,82 +327,9 @@
                                                                 </div>
 
 
-                                                                <div class="form-group row"
-                                                                     :class="['form-group', allerros.whats_app ? 'has-danger' : '']">
-                                                                    <label class="col-form-label">{{$t("profile.whatsapp")}}</label>
-                                                                    <div class="input-field">
-                                                                        <input class="form-control"
-                                                                               v-model="user.whats_app"
-                                                                               :class="['form-control', allerros.whats_app ? 'has-danger' : '']"
-                                                                               name="whats_app" required type="text">
-                                                                        <span v-if="allerros.whats_app"
-                                                                              :class="['badge badge-danger']">@{{ allerros.whats_app[0] }}</span>
-                                                                    </div>
-                                                                </div>
-
-                                                                <div class="form-group row"
-                                                                     :class="['form-group', allerros.facebook ? 'has-danger' : '']">
-                                                                    <label
-                                                                        class="col-form-label">{{$t("profile.fb")}}</label>
-                                                                    <div class="input-field">
-                                                                        <input class="form-control"
-                                                                               v-model="user.facebook"
-                                                                               :class="['form-control', allerros.facebook ? 'has-danger' : '']"
-                                                                               name="facebook" required type="text">
-                                                                        <span v-if="allerros.facebook"
-                                                                              :class="['badge badge-danger']">@{{ allerros.facebook[0] }}</span>
-                                                                    </div>
-                                                                </div>
-
                                                             </div>
 
                                                             <div class="col-lg-6">
-
-                                                                <div class="form-group form-select row">
-                                                                    <label class="col-form-label" for="Educations">{{$t("profile.arabic")}}</label>
-                                                                    <div class="input-field">
-                                                                        <select class="form-control" id="arabic_lang"
-                                                                                v-model="user.arabic_lang"
-                                                                                name="arabic_lang">
-                                                                            <option
-                                                                                v-for="lang_level in languages_levels"
-                                                                                :value="lang_level.id">{{
-                                                                                lang_level.title }}
-                                                                            </option>
-                                                                        </select>
-                                                                    </div>
-                                                                </div>
-
-                                                                <div class="form-group form-select row">
-                                                                    <label class="col-form-label" for="Educations">{{$t("profile.english")}}</label>
-                                                                    <div class="input-field">
-                                                                        <select class="form-control" id="english_lang"
-                                                                                v-model="user.english_lang"
-                                                                                name="english_lang">
-                                                                            <option
-                                                                                v-for="lang_level in languages_levels"
-                                                                                :value="lang_level.id">{{
-                                                                                lang_level.title }}
-                                                                            </option>
-                                                                        </select>
-                                                                    </div>
-                                                                </div>
-
-                                                                <div class="form-group form-select row">
-                                                                    <label class="col-form-label" for="Educations">{{$t("profile.china")}}</label>
-                                                                    <div class="input-field">
-                                                                        <select class="form-control" id="mandarin_lang"
-                                                                                v-model="user.mandarin_lang"
-                                                                                name="mandarin_lang">
-                                                                            <option
-                                                                                v-for="lang_level in languages_levels"
-                                                                                :value="lang_level.id">{{
-                                                                                lang_level.title }}
-                                                                            </option>
-                                                                        </select>
-                                                                    </div>
-                                                                </div>
-
 
                                                                 <div class="form-group form-select row">
                                                                     <label class="col-form-label"
@@ -514,20 +345,6 @@
                                                                     </div>
                                                                 </div>
 
-
-                                                                <div class="form-group form-select row">
-                                                                    <label class="col-form-label" for="Educations">{{$t("profile.eud")}}</label>
-                                                                    <div class="input-field">
-                                                                        <select class="form-control" id="Educations"
-                                                                                v-model="user.education"
-                                                                                name="education">
-                                                                            <option v-for="education in educations"
-                                                                                    :value="education.id">
-                                                                                {{education.title}}
-                                                                            </option>
-                                                                        </select>
-                                                                    </div>
-                                                                </div>
 
 
                                                                 <div class="form-group row"
@@ -554,8 +371,7 @@
                                                                                 v-model="user.country"
                                                                                 name="country">
                                                                             <option v-for="country in countries"
-                                                                                    :value="country.id">{{
-                                                                                country.title}}
+                                                                                    :value="country.id">{{country.title}}
                                                                             </option>
                                                                         </select>
                                                                     </div>
@@ -575,22 +391,6 @@
                                                                         </select>
                                                                     </div>
                                                                 </div>
-
-
-                                                                <div class="form-group form-select row"
-                                                                     :class="['form-group', allerros.bio ? 'has-danger' : '']">
-                                                                    <label class=" col-form-label"
-                                                                           for="country">{{$t("profile.bio")}}</label>
-                                                                    <div class="input-field">
-                                                                        <textarea name="bio" style="width: 100%"
-                                                                                  v-model="user.bio" id="bio"
-                                                                                  :class="['form-control', allerros.bio ? 'has-danger' : '']"
-                                                                                  rows="5"></textarea>
-                                                                        <span v-if="allerros.bio"
-                                                                              :class="['badge badge-danger']">@{{ allerros.bio[0] }}</span>
-                                                                    </div>
-                                                                </div>
-
 
                                                                 <div class="btn btn-save">
                                                                     <button class="btn btn-danger--custom"
@@ -658,7 +458,7 @@
                                                                 </div>
                                                                 <div class="form-group row"
                                                                      :class="['form-group', allerros.email ? 'has-danger' : '']">
-                                                                    <label class="col-form-label">{{$t("profile.email")}}</label>
+                                                                    <label class="col-form-label">{{$t("profile.emp_email")}}</label>
                                                                     <div class="input-field">
                                                                         <input class="form-control" v-model="user.email"
                                                                                :class="['form-control', allerros.email ? 'has-danger' : '']"
@@ -707,8 +507,7 @@
                                                                                 v-model="user.country"
                                                                                 name="country">
                                                                             <option v-for="country in countries"
-                                                                                    :value="country.id">{{
-                                                                                country.title}}
+                                                                                    :value="country.id">{{country.title}}
                                                                             </option>
                                                                         </select>
                                                                     </div>
@@ -722,8 +521,7 @@
                                                                                 v-model="user.nationality"
                                                                                 name="nationality">
                                                                             <option v-for="country in countries"
-                                                                                    :value="country.id">{{
-                                                                                country.title}}
+                                                                                    :value="country.id">{{country.title}}
                                                                             </option>
                                                                         </select>
                                                                     </div>

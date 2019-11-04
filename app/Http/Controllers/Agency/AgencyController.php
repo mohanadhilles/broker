@@ -124,9 +124,9 @@ class AgencyController extends BaseController
     public function getِAgency()
     {
 
-        $worker = User::where('role', '4')->with('nationality')
+        $worker = User::where('role', 4)->with('nationality')
             ->with('countries')->with('place_of_birth')->with('english_lang')->with('arabic_lang')
-            ->with('mandarin_lang')->paginate(8);
+            ->with('mandarin_lang')->get();
 
         if (!($worker)) {
 

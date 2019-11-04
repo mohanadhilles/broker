@@ -48,6 +48,21 @@
           <li>
               <a
                   href="#"
+                  @click.prevent="setLocale('ar')"
+                  class="flex items-center px-3 py-3 hover:bg-gray-200"
+                  @keydown.shift.tab="focusPrevious(false)"
+                  @keydown.up.exact.prevent="focusPrevious(true)"
+                  @keydown.down.exact.prevent=""
+                  @keydown.tab.exact="hideDropdown"
+                  @keydown.esc.exact="hideDropdown"
+              >
+                  <img src="../assets/img/flag_ar.svg" alt="english flag" class="h-8 w-8">
+                  <span class="ml-2">Arabic</span>
+              </a>
+          </li>
+          <li>
+              <a
+                  href="#"
                   @click.prevent="setLocale('ind')"
                   class="flex items-center px-3 py-3 hover:bg-gray-200"
                   @keydown.shift.tab="focusPrevious(false)"
@@ -148,11 +163,25 @@ export default {
           display: none;
       }
       .relative .absolute{
-          width: 150px;
+          width: 300px;
+          margin-left: 41px;
       }
       .relative button{
           width: 80% !important;
           margin-left: 10%;
+      }
+      .absolute li a{
+
+          font-size: 14px;
+          color:gray;
+      }
+      .flex img span{
+          margin-left: 1rem !important;
+          font-size: 14px;
+          color: gray;
+      }
+      .absolute li {
+          text-align: center;
       }
   }
 

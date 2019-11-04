@@ -1,6 +1,6 @@
 <template>
     <div class="slide">
-        <a href="#"><img style="border-radius: 50%" width="180" alt="slide img img-responsive rounded-circle" :src="item.imgUrl"></a>
+        <a href="#"><img style="border-radius: 20%" width="180" alt="slide img img-responsive" :src="item.imgUrl"></a>
         <h2 class="name">{{ item.name }}</h2>
         <div class="stars d-flex justify-content-center">
             <i class="far fa-star"></i>

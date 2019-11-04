@@ -115,8 +115,9 @@
                 </section>
             </div>
 
-            <Best />
-
+            <best></best>
+            <hr/>
+            <expert></expert>
         </header>
     </div>
 </template>
@@ -125,10 +126,11 @@
 
     import axios from 'axios';
     import Best from '../components/Best';
+    import Expert from "../components/Expert";
 
     export default {
         name: 'Home',
-        components: {Best},
+        components: {Best,Expert},
 
         data() {
             return {

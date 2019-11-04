@@ -107,8 +107,8 @@
                                 <div
                                     class="col-lg-6 col-md-12 col-sm-12 d-flex align-items-center justify-content-center flex-column"
                                     style="line-height: 1.5;">
-                                    <h5 class="text-center p-2">{{$t("login.or")}}<br>{{$t("login.social")}}</h5>
-                                    <SocialAuth></SocialAuth>
+<!--                                    <h5 class="text-center p-2">{{$t("login.or")}}<br>{{$t("login.social")}}</h5>-->
+<!--                                    <SocialAuth></SocialAuth>-->
                                 </div>
                             </div>
                         </div>
@@ -118,7 +118,8 @@
             </div>
         </header>
 
-        <Best/>
+        <best></best>
+        <expert></expert>
 
     </div>
 </template>
@@ -131,10 +132,11 @@
     import Best from '../../components/Best';
     import store from '../../store';
     import SocialAuth from "../../components/SocialAuth";
+    import Expert from "../../components/Expert";
 
     export default {
         name: 'Login',
-        components: {Header, Best, SocialAuth},
+        components: {Header, Best, SocialAuth,Expert},
 
         data: function () {
             return {

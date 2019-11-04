@@ -802,7 +802,7 @@ html {
 .btn-danger--custom {
     background-color: #EB3F66;
     color: #ffffff !important;
-    font-size: 1.25rem;
+    font-size: .9rem;
     font-family: 'DuCoHeadlineMedium', sans-serif;
     transition: all .6s ease;
     border: 2px solid #EB3F66;
@@ -1009,7 +1009,7 @@ html {
 }
 
 .slick-slide img {
-    width: 90%;
+    width: 80%;
     margin-top: 50px;
     opacity: .5;
 }
@@ -1232,7 +1232,7 @@ div.slide.slick-slide.slick-current.slick-active.slick-center img {
 #started-section .btn-primary--custom {
     background-color: #1CB6C5;
     color: #ffffff !important;
-    font-size: 1.25rem;
+    font-size: .9rem;
     font-family: 'DuCoHeadlineMedium', sans-serif;
     transition: all .6s ease;
     border: 2px solid #1CB6C5;
@@ -3490,7 +3490,7 @@ main.popup-section .modal-backdrop {
 
     /*--------- auth media Style ----------*/
     .check-wrapper {
-        font-size: .75rem;
+        font-size: 10px;
     }
 
     #auth-section .form-check-inline {
@@ -4628,7 +4628,7 @@ main.popup-section .modal-backdrop {
     }
 
     #started-section .media-body h4 {
-        font-size: .937rem;
+        font-size: .7rem;
     }
 
     #started-section .media-body small {
