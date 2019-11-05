@@ -24,7 +24,7 @@
                             <div class="tab-content" id="pills-tabContent">
                                 <div aria-labelledby="pills-home-tab" class="tab-pane fade show active" id="pills-home"
                                      role="tabpanel">
-                                    <div class="media" v-for="notification of  notifications">
+                                    <div class="media" v-for="notification of notifications">
                                         <img alt="..." width="80" class="mr-3" :src="notification.user.imgUrl">
                                         <div class="media-body">
                                             <h5 class="mt-0 mery-heba">@{{notification.user.name}}</h5>

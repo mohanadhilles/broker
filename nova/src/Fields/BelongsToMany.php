@@ -2,16 +2,17 @@
 
 namespace Laravel\Nova\Fields;
 
-use Illuminate\Support\Str;
 use Illuminate\Http\Request;
-use Laravel\Nova\TrashedStatus;
-use Laravel\Nova\Rules\NotAttached;
-use Laravel\Nova\Contracts\ListableField;
-use Laravel\Nova\Http\Requests\NovaRequest;
-use Laravel\Nova\Rules\RelatableAttachment;
+use Illuminate\Support\Str;
 use Laravel\Nova\Contracts\Deletable as DeletableContract;
+use Laravel\Nova\Contracts\ListableField;
+use Laravel\Nova\Contracts\RelatableField;
+use Laravel\Nova\Http\Requests\NovaRequest;
+use Laravel\Nova\Rules\NotAttached;
+use Laravel\Nova\Rules\RelatableAttachment;
+use Laravel\Nova\TrashedStatus;
 
-class BelongsToMany extends Field implements DeletableContract, ListableField
+class BelongsToMany extends Field implements DeletableContract, ListableField, RelatableField
 {
     use Deletable, DetachesPivotModels, FormatsRelatableDisplayValues;
 

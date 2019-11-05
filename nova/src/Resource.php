@@ -3,17 +3,17 @@
 namespace Laravel\Nova;
 
 use ArrayAccess;
-use JsonSerializable;
-use Illuminate\Support\Str;
-use Laravel\Nova\Fields\ID;
-use Illuminate\Http\Request;
-use Laravel\Scout\Searchable;
-use Illuminate\Support\Collection;
-use Laravel\Nova\Http\Requests\NovaRequest;
 use Illuminate\Contracts\Routing\UrlRoutable;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use Illuminate\Http\Resources\DelegatesToResource;
+use Illuminate\Http\Request;
 use Illuminate\Http\Resources\ConditionallyLoadsAttributes;
+use Illuminate\Http\Resources\DelegatesToResource;
+use Illuminate\Support\Collection;
+use Illuminate\Support\Str;
+use JsonSerializable;
+use Laravel\Nova\Fields\ID;
+use Laravel\Nova\Http\Requests\NovaRequest;
+use Laravel\Scout\Searchable;
 
 abstract class Resource implements ArrayAccess, JsonSerializable, UrlRoutable
 {
@@ -311,6 +311,7 @@ abstract class Resource implements ArrayAccess, JsonSerializable, UrlRoutable
     public function serializeForIndex(NovaRequest $request, $fields = null)
     {
         return array_merge($this->serializeWithId($fields ?: $this->indexFields($request)), [
+            'actions' => $this->availableActions($request),
             'authorizedToView' => $this->authorizedToView($request),
             'authorizedToCreate' => $this->authorizedToCreate($request),
             'authorizedToUpdate' => $this->authorizedToUpdateForSerialization($request),
@@ -416,7 +417,7 @@ abstract class Resource implements ArrayAccess, JsonSerializable, UrlRoutable
      * Return the location to redirect the user after creation.
      *
      * @param  \Laravel\Nova\Http\Requests\NovaRequest  $request
-     * @param  \App\Nova\Resource  $resource
+     * @param  \Laravel\Nova\Resource  $resource
      * @return string
      */
     public static function redirectAfterCreate(NovaRequest $request, $resource)
@@ -428,7 +429,7 @@ abstract class Resource implements ArrayAccess, JsonSerializable, UrlRoutable
      * Return the location to redirect the user after update.
      *
      * @param  \Laravel\Nova\Http\Requests\NovaRequest  $request
-     * @param  \App\Nova\Resource  $resource
+     * @param  \Laravel\Nova\Resource  $resource
      * @return string
      */
     public static function redirectAfterUpdate(NovaRequest $request, $resource)

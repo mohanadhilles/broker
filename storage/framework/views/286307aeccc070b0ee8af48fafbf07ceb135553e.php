@@ -12,11 +12,19 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="<?php echo e(mix('app.css', 'vendor/nova')); ?>">
+
+    <!-- Custom Meta Data -->
+    <?php echo $__env->make('nova::partials.meta', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+
+    <!-- Theme Styles -->
+    <?php $__currentLoopData = Nova::themeStyles(); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $publicPath): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+        <link rel="stylesheet" href="<?php echo e($publicPath); ?>">
+    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
 </head>
 <body class="bg-40 text-black h-full">
     <div class="h-full">
         <div class="px-view py-view mx-auto">
-            <?php echo $__env->yieldContent('Content'); ?>
+            <?php echo $__env->yieldContent('content'); ?>
         </div>
     </div>
 </body>

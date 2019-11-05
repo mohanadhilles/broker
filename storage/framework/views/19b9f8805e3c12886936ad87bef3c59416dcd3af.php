@@ -12,25 +12,6 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="<?php echo e(mix('app.css', 'vendor/nova')); ?>">
-    <link rel="apple-touch-icon" sizes="57x57" href="<?php echo e(asset('icons/apple-icon-57x57.png')); ?>">
-    <link rel="apple-touch-icon" sizes="60x60" href="<?php echo e(asset('icons/apple-icon-60x60.png')); ?>">
-    <link rel="apple-touch-icon" sizes="72x72" href="<?php echo e(asset('icons/apple-icon-72x72.png')); ?>">
-    <link rel="apple-touch-icon" sizes="76x76" href="<?php echo e(asset('icons/apple-icon-76x76.png')); ?>">
-    <link rel="apple-touch-icon" sizes="114x114" href="<?php echo e(asset('icons/apple-icon-114x114.png')); ?>">
-    <link rel="apple-touch-icon" sizes="120x120" href="<?php echo e(asset('icons/apple-icon-120x120.png')); ?>">
-    <link rel="apple-touch-icon" sizes="144x144" href="<?php echo e(asset('icons/apple-icon-144x144.png')); ?>">
-    <link rel="apple-touch-icon" sizes="152x152" href="<?php echo e(asset('icons/apple-icon-152x152.png')); ?>">
-    <link rel="apple-touch-icon" sizes="180x180" href="<?php echo e(asset('icons/apple-icon-180x180.png')); ?>">
-    <link rel="icon" type="image/png" sizes="192x192"  href="<?php echo e(asset('icons/android-icon-192x192.png')); ?>">
-    <link rel="icon" type="image/png" sizes="32x32" href="<?php echo e(asset('icons/favicon-32x32.png')); ?>">
-    <link rel="icon" type="image/png" sizes="96x96" href="<?php echo e(asset('icons/favicon-96x96.png')); ?>">
-    <link rel="icon" type="image/png" sizes="16x16" href="<?php echo e(asset('icons/favicon-16x16.png')); ?>">
-    <link rel="manifest" href="<?php echo e(asset('icons/manifest.json')); ?>">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="<?php echo e(asset('icons/ms-icon-144x144.png')); ?>">
-    <meta name="theme-color" content="#ffffff">
-
-
 
     <!-- Tool Styles -->
     <?php $__currentLoopData = \Laravel\Nova\Nova::availableStyles(request()); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $name => $path): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
@@ -39,6 +20,11 @@
 
     <!-- Custom Meta Data -->
     <?php echo $__env->make('nova::partials.meta', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+
+    <!-- Theme Styles -->
+    <?php $__currentLoopData = Nova::themeStyles(); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $publicPath): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+        <link rel="stylesheet" href="<?php echo e($publicPath); ?>">
+    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
 </head>
 <body class="min-w-site bg-40 text-black min-h-full">
     <div id="nova">
@@ -60,13 +46,13 @@
             <!-- Content -->
             <div class="content">
                 <div class="flex items-center relative shadow h-header bg-white z-20 px-6">
-                    <a v-if="'<?php echo e(\Laravel\Nova\Nova::name()); ?>'" href="<?php echo e(\Illuminate\Support\Facades\Config::get('nova.url')); ?>" class="no-underline dim font-bold text-90 mr-6">
+                    <a v-if="<?php echo json_encode(\Laravel\Nova\Nova::name() !== null, 15, 512) ?>" href="<?php echo e(\Illuminate\Support\Facades\Config::get('nova.url')); ?>" class="no-underline dim font-bold text-90 mr-6">
                         <?php echo e(\Laravel\Nova\Nova::name()); ?>
 
                     </a>
 
                     <?php if(count(\Laravel\Nova\Nova::globallySearchableResources(request())) > 0): ?>
-                        <global-search></global-search>
+                        <global-search dusk="global-search-component"></global-search>
                     <?php endif; ?>
 
                     <dropdown class="ml-auto h-9 flex items-center dropdown-right">
@@ -75,7 +61,7 @@
                 </div>
 
                 <div data-testid="content" class="px-view py-view mx-auto">
-                    <?php echo $__env->yieldContent('Content'); ?>
+                    <?php echo $__env->yieldContent('content'); ?>
 
                     <?php echo $__env->make('nova::partials.footer', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
                 </div>

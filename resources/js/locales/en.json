@@ -78,6 +78,7 @@
         "title": "Privacy policy"
     },
     "profile": {
+        "attach": "Attachment Passport File",
         "title": "mery Profile ",
         "modal_title": " mery platform for a house helpers",
         "complete": "Profile Completed",
@@ -101,6 +102,7 @@
         "english": "English Language",
         "china": "Mandarin Language",
         "whatsapp": "WhatsApp Number",
+
         "fb": "FaceBook Url",
         "yt": "Youtube Url",
         "rel": "Religion",

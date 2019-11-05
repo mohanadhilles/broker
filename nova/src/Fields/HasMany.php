@@ -2,11 +2,12 @@
 
 namespace Laravel\Nova\Fields;
 
-use Illuminate\Support\Str;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 use Laravel\Nova\Contracts\ListableField;
+use Laravel\Nova\Contracts\RelatableField;
 
-class HasMany extends Field implements ListableField
+class HasMany extends Field implements ListableField, RelatableField
 {
     /**
      * The field's component.

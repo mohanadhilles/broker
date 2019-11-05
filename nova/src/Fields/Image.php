@@ -25,7 +25,7 @@ class Image extends File
      *
      * @var bool
      */
-    public $rounded = true;
+    public $rounded = false;
 
     /**
      * Create a new field.
@@ -85,6 +85,26 @@ class Image extends File
     }
 
     /**
+     * Determine whether the field should have rounded corners.
+     *
+     * @return bool
+     */
+    public function isRounded()
+    {
+        return $this->rounded == true;
+    }
+
+    /**
+     * Determine whether the field should have squared corners.
+     *
+     * @return bool
+     */
+    public function isSquared()
+    {
+        return $this->rounded == false;
+    }
+
+    /**
      * Prepare the field element for JSON serialization.
      *
      * @return array
@@ -93,7 +113,7 @@ class Image extends File
     {
         return array_merge(parent::jsonSerialize(), [
             'maxWidth' => $this->maxWidth,
-            'rounded' => $this->rounded,
+            'rounded' => $this->isRounded(),
         ]);
     }
 }

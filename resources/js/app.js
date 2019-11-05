@@ -36,8 +36,8 @@ router.beforeEach((to, from, next) => {
 Vue.use(VueSocialauth, social);
 
 
-axios.defaults.baseURL = 'https://broker.dev/';
-process.env.MIX_APP_URL;
+axios.defaults.baseURL = 'https://mery.com/';
+// process.env.MIX_APP_URL;
 
 router.beforeEach((to, from, next) => {
     let language = to.params.lang;

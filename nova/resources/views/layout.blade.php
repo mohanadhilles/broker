@@ -12,25 +12,6 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="{{ mix('app.css', 'vendor/nova') }}">
-    <link rel="apple-touch-icon" sizes="57x57" href="{{asset('icons/apple-icon-57x57.png')}}">
-    <link rel="apple-touch-icon" sizes="60x60" href="{{asset('icons/apple-icon-60x60.png')}}">
-    <link rel="apple-touch-icon" sizes="72x72" href="{{asset('icons/apple-icon-72x72.png')}}">
-    <link rel="apple-touch-icon" sizes="76x76" href="{{asset('icons/apple-icon-76x76.png')}}">
-    <link rel="apple-touch-icon" sizes="114x114" href="{{asset('icons/apple-icon-114x114.png')}}">
-    <link rel="apple-touch-icon" sizes="120x120" href="{{asset('icons/apple-icon-120x120.png')}}">
-    <link rel="apple-touch-icon" sizes="144x144" href="{{asset('icons/apple-icon-144x144.png')}}">
-    <link rel="apple-touch-icon" sizes="152x152" href="{{asset('icons/apple-icon-152x152.png')}}">
-    <link rel="apple-touch-icon" sizes="180x180" href="{{asset('icons/apple-icon-180x180.png')}}">
-    <link rel="icon" type="image/png" sizes="192x192"  href="{{asset('icons/android-icon-192x192.png')}}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{asset('icons/favicon-32x32.png')}}">
-    <link rel="icon" type="image/png" sizes="96x96" href="{{asset('icons/favicon-96x96.png')}}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{asset('icons/favicon-16x16.png')}}">
-    <link rel="manifest" href="{{asset('icons/manifest.json')}}">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="{{asset('icons/ms-icon-144x144.png')}}">
-    <meta name="theme-color" content="#ffffff">
-
-
 
     <!-- Tool Styles -->
     @foreach(\Laravel\Nova\Nova::availableStyles(request()) as $name => $path)
@@ -39,6 +20,11 @@
 
     <!-- Custom Meta Data -->
     @include('nova::partials.meta')
+
+    <!-- Theme Styles -->
+    @foreach(Nova::themeStyles() as $publicPath)
+        <link rel="stylesheet" href="{{ $publicPath }}">
+    @endforeach
 </head>
 <body class="min-w-site bg-40 text-black min-h-full">
     <div id="nova">
@@ -59,12 +45,12 @@
             <!-- Content -->
             <div class="content">
                 <div class="flex items-center relative shadow h-header bg-white z-20 px-6">
-                    <a v-if="'{{ \Laravel\Nova\Nova::name() }}'" href="{{ \Illuminate\Support\Facades\Config::get('nova.url') }}" class="no-underline dim font-bold text-90 mr-6">
+                    <a v-if="@json(\Laravel\Nova\Nova::name() !== null)" href="{{ \Illuminate\Support\Facades\Config::get('nova.url') }}" class="no-underline dim font-bold text-90 mr-6">
                         {{ \Laravel\Nova\Nova::name() }}
                     </a>
 
                     @if (count(\Laravel\Nova\Nova::globallySearchableResources(request())) > 0)
-                        <global-search></global-search>
+                        <global-search dusk="global-search-component"></global-search>
                     @endif
 
                     <dropdown class="ml-auto h-9 flex items-center dropdown-right">
@@ -73,7 +59,7 @@
                 </div>
 
                 <div data-testid="content" class="px-view py-view mx-auto">
-                    @yield('Content')
+                    @yield('content')
 
                     @include('nova::partials.footer')
                 </div>

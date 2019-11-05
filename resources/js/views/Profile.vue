@@ -121,7 +121,7 @@
                                                                 </div>
                                                                 <div class="form-group row"
                                                                      :class="['form-group', allerros.email ? 'has-danger' : '']">
-                                                                    <label class="col-form-label">{{$t("profile.email")}}</label>
+                                                                    <label class="col-form-label">{{$t("profile.emp_email")}}</label>
                                                                     <div class="input-field">
                                                                         <input class="form-control" v-model="user.email"
                                                                                :class="['form-control', allerros.email ? 'has-danger' : '']"
@@ -134,15 +134,16 @@
 
                                                                 <div class="form-group row"
                                                                      :class="['form-group', allerros.cv ? 'has-danger' : '']">
-                                                                    <label
-                                                                        class="col-form-label">{{$t("profile.passport")}}</label>
+                                                                    <label for="fileUpload" class="changePassport attach">{{$t("profile.attach")}}</label>
+                                                                    <input id="fileUpload" @change="savePassport" type="file"
+                                                                           name="cv" accept="*/*" class="custom-file-input" value="Change Passport">
+<!--                                                                    <label class="col-form-label attach">{{$t("profile.passport")}}</label>-->
                                                                     <div class="input-field">
                                                                         <div class="ml-4 mt-3 profile-pic">
-                                                                            <label for="fileUpload" class="changePassport">{{$t("profile.passport")}}</label>
-                                                                            <input id="fileUpload" @change="savePassport" type="file"  name="cv" accept="*/*" class="custom-file-input" value="Change Passport">
+
                                                                         </div>
-                                                                        <img width="120" alt="want mery" ref="personalImg"
-                                                                             class="align-self-start profile-picture img-responsive rounded-circle"
+                                                                        <img  alt="want mery" ref="personalfile"
+                                                                             class="align-self-start profile-picture img-responsive img-thumbnail"
                                                                              :src="pass">
                                                                     </div>
                                                                 </div>
@@ -154,7 +155,7 @@
                                                                 <div class="form-group form-select row"
                                                                      :class="['form-group', allerros.religion ? 'has-danger' : '']">
                                                                     <label class="col-form-label"
-                                                                           for="Educations">{{$t("profile.rel")}}</label>
+                                                                           for="education">{{$t("profile.rel")}}</label>
                                                                     <div class="input-field">
                                                                         <select class="form-control" id="religion"
                                                                                 :class="['form-control', allerros.religion ? 'has-danger' : '']"
@@ -316,7 +317,7 @@
                                                                 </div>
                                                                 <div class="form-group row"
                                                                      :class="['form-group', allerros.email ? 'has-danger' : '']">
-                                                                    <label class="col-form-label">{{$t("profile.email")}}</label>
+                                                                    <label class="col-form-label">{{$t("profile.emp_email")}}</label>
                                                                     <div class="input-field">
                                                                         <input class="form-control" v-model="user.email"
                                                                                :class="['form-control', allerros.email ? 'has-danger' : '']"
@@ -784,7 +785,7 @@
 
         computed: {
          pass(){
-            return window.location.origin +'/storage/storage/'+ this.user.cv;
+            return window.location.origin +'/public/storage/storage/'+ this.user.cv;
          },
             referal() {
                 return window.location.origin + '/en/profile/' + this.user.id
@@ -962,7 +963,7 @@
                 const reader = new FileReader();
                 reader.readAsDataURL(file);
                 reader.onload = e => {
-                    this.$refs.personalImg.src = e.target.result;
+                    this.$refs.personalfile.src = e.target.result;
                 };
                 fd.append('cv', file);
                 axios.post('/api/worker/file', fd, {
@@ -1019,6 +1020,17 @@
         display: inline;
         border-bottom: dashed 2px #32bcca;
         padding-bottom: 5px;
+    }
+    .img-thumbnail{
+        width:300px;
+        height:500px;
+    }
+    .attach{
+        border: solid 2px #eb3f66;
+        color: white;
+        background: #eb3f66;
+        padding: 10px;
+        border-radius: 5px;
     }
 </style>
 

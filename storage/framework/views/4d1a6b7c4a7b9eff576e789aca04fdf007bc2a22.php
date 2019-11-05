@@ -13,12 +13,15 @@
     <ul class="list-reset mb-8">
         <?php $__currentLoopData = Laravel\Nova\Nova::availableDashboards(request()); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $dashboard): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
             <li class="leading-wide mb-4 text-sm">
-                <router-link :to="{
-                    name: 'dashboard.custom',
+                <router-link :to='{
+                    name: "dashboard.custom",
                     params: {
-                        name: '<?php echo e($dashboard::uriKey()); ?>',
-                    }
-                }" class="text-white ml-8 no-underline dim">
+                        name: "<?php echo e($dashboard::uriKey()); ?>",
+                    },
+                    query: <?php echo json_encode($dashboard->meta(), 15, 512) ?>,
+                }'
+                exact
+                class="text-white ml-8 no-underline dim">
                     <?php echo e($dashboard::label()); ?>
 
                 </router-link>

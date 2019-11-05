@@ -2,18 +2,18 @@
 
 namespace Laravel\Nova\Tests\Feature;
 
-use stdClass;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Route;
-use Laravel\Nova\Fields\Text;
-use Laravel\Nova\Fields\Trix;
-use Laravel\Nova\Fields\Select;
-use Laravel\Nova\Fields\Password;
-use Laravel\Nova\Fields\Textarea;
 use Laravel\Nova\Fields\BelongsTo;
-use Laravel\Nova\Tests\IntegrationTest;
+use Laravel\Nova\Fields\Password;
+use Laravel\Nova\Fields\Select;
+use Laravel\Nova\Fields\Text;
+use Laravel\Nova\Fields\Textarea;
+use Laravel\Nova\Fields\Trix;
 use Laravel\Nova\Http\Requests\NovaRequest;
 use Laravel\Nova\Tests\Fixtures\UserResource;
+use Laravel\Nova\Tests\IntegrationTest;
+use stdClass;
 
 class FieldTest extends IntegrationTest
 {
@@ -266,5 +266,53 @@ class FieldTest extends IntegrationTest
 
         $this->assertObjectNotHasAttribute('query', $model);
         $this->assertEquals('resource', $model->resource);
+    }
+
+    public function test_fields_are_not_required_by_default()
+    {
+        $request = NovaRequest::create('/nova-api/users/creation-fields', 'GET');
+
+        $field = Text::make('Name');
+
+        $this->assertFalse($field->isRequired($request));
+    }
+
+    public function test_can_mark_a_field_as_required_for_create_if_in_validation()
+    {
+        $request = NovaRequest::create('/nova-api/users/creation-fields', 'GET', [
+            'editing' => true,
+            'editMode' => 'create',
+        ]);
+
+        $field = Text::make('Name')->rules('required');
+
+        $this->assertTrue($field->isRequired($request));
+    }
+
+    public function test_can_mark_a_field_as_required_for_update_if_in_validation()
+    {
+        $request = NovaRequest::create('/nova-api/users/update-fields', 'GET', [
+            'editing' => true,
+            'editMode' => 'update',
+        ]);
+
+        $field = Text::make('Name')->rules('required');
+
+        $this->assertTrue($field->isRequired($request));
+    }
+
+    public function test_can_mark_a_field_as_required_using_callback()
+    {
+        $request = NovaRequest::create('/nova-api/users', 'GET');
+
+        $field = Text::make('Name')->required();
+
+        $this->assertTrue($field->isRequired($request));
+
+        $field = Text::make('Name')->required(function () {
+            return false;
+        });
+
+        $this->assertFalse($field->isRequired($request));
     }
 }

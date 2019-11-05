@@ -2,15 +2,16 @@
 
 namespace Laravel\Nova\Fields;
 
-use Illuminate\Support\Str;
-use Illuminate\Http\Request;
-use Laravel\Nova\TrashedStatus;
-use Laravel\Nova\Rules\Relatable;
-use Laravel\Nova\Http\Requests\NovaRequest;
 use Illuminate\Database\Eloquent\Relations\Relation;
+use Illuminate\Http\Request;
+use Illuminate\Support\Str;
+use Laravel\Nova\Contracts\RelatableField;
+use Laravel\Nova\Http\Requests\NovaRequest;
 use Laravel\Nova\Http\Requests\ResourceIndexRequest;
+use Laravel\Nova\Rules\Relatable;
+use Laravel\Nova\TrashedStatus;
 
-class BelongsTo extends Field
+class BelongsTo extends Field implements RelatableField
 {
     use FormatsRelatableDisplayValues;
     use ResolvesReverseRelation;
@@ -169,15 +170,14 @@ class BelongsTo extends Field
     }
 
     /**
-     * Resolve the field's value for display.
+     * Define the callback that should be used to resolve the field's value.
      *
-     * @param  mixed  $resource
-     * @param  string|null  $attribute
-     * @return void
+     * @param  callable  $displayCallback
+     * @return $this
      */
-    public function resolveForDisplay($resource, $attribute = null)
+    public function displayUsing(callable $displayCallback)
     {
-        //
+        return $this->display($displayCallback);
     }
 
     /**

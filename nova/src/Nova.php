@@ -2,18 +2,18 @@
 
 namespace Laravel\Nova;
 
-use ReflectionClass;
 use BadMethodCallException;
-use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Hash;
-use Laravel\Nova\Events\ServingNova;
-use Symfony\Component\Finder\Finder;
 use Illuminate\Support\Facades\Event;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Route;
-use Laravel\Nova\Http\Requests\NovaRequest;
+use Illuminate\Support\Str;
+use Laravel\Nova\Events\ServingNova;
 use Laravel\Nova\Http\Middleware\RedirectIfAuthenticated;
+use Laravel\Nova\Http\Requests\NovaRequest;
+use ReflectionClass;
+use Symfony\Component\Finder\Finder;
 
 class Nova
 {
@@ -104,6 +104,13 @@ class Nova
     public static $styles = [];
 
     /**
+     * The theme CSS files applied to Nova.
+     *
+     * @var array
+     */
+    public static $themes = [];
+
+    /**
      * The variables that should be made available on the Nova JavaScript object.
      *
      * @var array
@@ -131,7 +138,7 @@ class Nova
      */
     public static function version()
     {
-        return '2.2.0';
+        return '2.6.1';
     }
 
     /**
@@ -192,6 +199,7 @@ class Nova
                 'singularLabel' => $resource::singularLabel(),
                 'authorizedToCreate' => $resource::authorizedToCreate($request),
                 'searchable' => $resource::searchable(),
+                'perPageOptions' => $resource::perPageOptions(),
             ], $resource::additionalInformation($request));
         })->values()->all();
     }
@@ -214,7 +222,7 @@ class Nova
      * Get the resources available for the given request.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @return array
+     * @return \Illuminate\Support\Collection
      */
     public static function globallySearchableResources(Request $request)
     {
@@ -675,6 +683,16 @@ class Nova
     }
 
     /**
+     * Get all of the theme stylesheets that should be registered.
+     *
+     * @return array
+     */
+    public static function themeStyles()
+    {
+        return static::$themes;
+    }
+
+    /**
      * Register the given script file with Nova.
      *
      * @param  string  $name
@@ -716,6 +734,17 @@ class Nova
     }
 
     /**
+     * Register the given theme CSS file with Nova.
+     *
+     * @param string $publicPath
+     * @return static
+     */
+    public static function theme($publicPath)
+    {
+        static::$themes[] = $publicPath;
+    }
+
+    /**
      * Register the given translations with Nova.
      *
      * @param  array|string  $translations
@@ -737,7 +766,7 @@ class Nova
     }
 
     /**
-     * Get all of the additional stylesheets that should be loaded.
+     * Get all of the additional translations that should be loaded.
      *
      * @return array
      */

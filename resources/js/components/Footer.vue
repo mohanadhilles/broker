@@ -22,7 +22,7 @@
 
                         </div>
                         <div class="col-lg-2 col-sm-6 col-6 footer-section">
-                            <h6 class="list-heading">{{$t("logo")}}</h6>
+                            <h6 class="list-heading">{{$t("footer.logo")}}</h6>
                             <ul class="list-unstyled">
                                 <li>
                                     <router-link :to="{name: 'about'}" class="nav-link--footer">{{$t("about.title")}}</router-link>

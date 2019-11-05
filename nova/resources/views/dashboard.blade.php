@@ -1,5 +1,5 @@
 @extends('nova::layout')
 
-@section('Content')
+@section('content')
 Dashboard Content
 @endsection

@@ -12,14 +12,14 @@ trait Expandable
     public $expandableCallback;
 
     /**
-     * Whether to always show the Content for the field expanded or not.
+     * Whether to always show the content for the field expanded or not.
      *
      * @var bool
      */
     public $alwaysShow = false;
 
     /**
-     * Always show the Content of textarea fields inside Nova.
+     * Always show the content of textarea fields inside Nova.
      *
      * @return $this
      */

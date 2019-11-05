@@ -5,7 +5,7 @@
             <section class="posts-section find-mery">
                 <div class="container job-header">
                     <h2 class="job-posts">
-                        find mery
+                       {{$t("find")}}
                     </h2>
                     <div class="line--1"></div>
                 </div>
@@ -16,7 +16,7 @@
                             <div class="input-group">
                                 <div class="input-group-prepend search-text">
                                     <div class="input-group-text inp-l">
-                                        <span class="left-text">search</span>
+                                        <span class="left-text">{{$t("search")}}</span>
                                     </div>
                                 </div>
                                 <input class="form-control search-input" v-model="search_name" id="search"
@@ -31,7 +31,7 @@
                                                  v-if="!filter_mode">
                                             <img alt="filter" class="filter-icon" src="../assets/img/filter-icon.png"
                                                  v-if="filter_mode">
-                                            <span class="right-text">Filter</span>
+                                            <span class="right-text">{{$t("filter")}}</span>
                                         </a>
                                     </div>
                                 </div>
@@ -39,7 +39,7 @@
                                 <div class="ver-line">&nbsp</div>
 
                                 <div class="btn btn-search">
-                                    <a @click.prevent="searchByName" class="btn-text">search</a>
+                                    <a @click.prevent="searchByName" class="btn-text">{{$t("search")}}</a>
                                 </div>
                             </div>
                         </div>
@@ -53,7 +53,7 @@
                             <aside class="filter-options">
                                 <form>
                                     <div class="form-group form-select">
-                                        <label class="label-text" for="location">Country</label>
+                                        <label class="label-text" for="location">{{$t("profile.country")}}</label>
                                         <select v-model="country_to_work" class="form-control" id="location"
                                                 name="country_to_work">
                                             <option v-for="country of countries" :value="country.title">{{ country.title
@@ -63,16 +63,15 @@
                                     </div>
 
                                     <div class="form-group form-select">
-                                        <label class="label-text">Nationality</label>
+                                        <label class="label-text">{{$t("profile.nation")}}</label>
                                         <select v-model="nationality" class="form-control" name="location">
-                                            <option v-for="country of countries" :value="country.title">{{ country.title
-                                                }}
+                                            <option v-for="country of countries" :value="country.title">{{ country.title}}
                                             </option>
                                         </select>
                                     </div>
 
                                     <div class="form-group form-select">
-                                        <label class="label-text">Salary</label>
+                                        <label class="label-text">{{$t("profile.salary")}}</label>
                                         <div class="input-field">
                                             <input v-model="salary" class="form-control" name="salary"
                                                    type="text">
@@ -80,7 +79,7 @@
                                     </div>
 
                                     <div class="form-group form-select">
-                                        <label class="label-text">Job Type</label>
+                                        <label class="label-text">{{$t("profile.type")}}</label>
                                         <select v-model="job_type" class="form-control" name="job_type">
                                             <option v-for="job of job_types" :value="job.title">{{ job.title }}</option>
                                         </select>
@@ -107,7 +106,7 @@
                                         </h5>
                                         <img alt="place" src="../assets/img/place-2.png"> <span class="job-location">{{ mery.nationality.title }}</span>
                                         <p class="job-duration">
-                                            <span class="dur">{{mery.salary}} $ Per Month</span>
+                                            <span class="dur">{{mery.salary}} ${{$t("details.month")}}</span>
                                         </p>
                                         <p class="job-description"> {{ mery.bio }}</p>
                                     </div>
@@ -118,7 +117,7 @@
 
                                     <div class="align-self-end">
                                         <router-link :to="{ name: 'public_profile', params:  { id: mery.id }  }"
-                                                     class="more">View More <img alt="arrow"
+                                                     class="more">{{$t('more')}}<img alt="arrow"
                                                                                  src="../assets/img/rihgtArrow.png">
                                         </router-link>
                                     </div>

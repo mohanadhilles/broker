@@ -2,8 +2,8 @@
 
 namespace Laravel\Nova;
 
-use JsonSerializable;
 use Illuminate\Http\Resources\MergeValue;
+use JsonSerializable;
 
 class Panel extends MergeValue implements JsonSerializable
 {

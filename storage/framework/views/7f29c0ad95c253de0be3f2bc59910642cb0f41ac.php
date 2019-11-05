@@ -1,13 +1,12 @@
-<?php $__env->startSection('Content'); ?>
-    <div>
-        <loading ref="loading"></loading>
+<?php $__env->startSection('content'); ?>
+    <loading ref="loading"></loading>
 
-        <transition name="fade" mode="out-in">
-            <router-view :key="$route.name + ($route.params.resourceName || '')"></router-view>
-        </transition>
+    <fade-transition>
+        <router-view :key="$route.name + ($route.params.resourceName || '')"></router-view>
+    </fade-transition>
 
-        <portal-target name="modals" multiple></portal-target>
-    </div>
+    <portal-target name="modals" transition="fade-transition"></portal-target>
+    <portal-target name="dropdowns" transition="fade-transition"></portal-target>
 <?php $__env->stopSection(); ?>
 
 <?php echo $__env->make('nova::layout', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH /Users/mohanad/Documents/GitHub/broker/nova/src/../resources/views/router.blade.php ENDPATH**/ ?>

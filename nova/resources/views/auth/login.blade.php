@@ -1,6 +1,6 @@
 @extends('nova::auth.layout')
 
-@section('Content')
+@section('content')
 
 @include('nova::auth.partials.header')
 
